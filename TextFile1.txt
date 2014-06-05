@@ -1,0 +1,21 @@
+[Window Title]
+Windows Phone Emulator
+
+[Content]
+Windows Phone Emulator is unable to verify that the virtual machine is running:
+
+Unable to load DLL 'LocBootPresets': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
+
+[Close]
+
+[Window Title]
+Windows Phone Emulator
+
+[Content]
+The Windows Phone Emulator wasn't able to connect to the Windows Phone operating system: 
+
+The emulator couldn't determine the host IP address, which is used to communicate with the guest virtual machine.
+
+Some functionality may be disabled.
+
+[Close]
