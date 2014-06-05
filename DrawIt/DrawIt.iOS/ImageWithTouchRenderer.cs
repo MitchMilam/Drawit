@@ -9,7 +9,6 @@ namespace DrawIt.iOS
 {
     public class ImageWithTouchRenderer : ImageRenderer
     {
-        // Override the OnModelSet method so we can tweak this renderer post-initial setup
         protected override void OnModelSet(VisualElement model)
         {
             base.OnModelSet(model);

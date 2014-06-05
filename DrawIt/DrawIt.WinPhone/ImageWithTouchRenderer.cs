@@ -10,7 +10,7 @@ using System.ComponentModel;
 using DrawIt;
 using DrawIt.WinPhone;
 
-[assembly: ExportRenderer(typeof(ImageWithTouch), typeof(ImageWithTouchRenderer))]
+//[assembly: ExportRenderer(typeof(ImageWithTouch), typeof(ImageWithTouchRenderer))]
 
 namespace DrawIt.WinPhone
 {

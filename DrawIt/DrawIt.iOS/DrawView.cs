@@ -7,6 +7,7 @@ using MonoTouch.UIKit;
 
 namespace DrawIt.iOS
 {
+    // Original Source: http://stackoverflow.com/questions/21029440/xamarin-ios-drawing-onto-image-after-scaling-it
 	public class DrawView : UIView
 	{
 		public DrawView (RectangleF frame) : base (frame)
