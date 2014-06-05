@@ -10,29 +10,31 @@ using System.ComponentModel;
 using DrawIt;
 using DrawIt.WinPhone;
 
-[assembly: ExportRenderer(typeof(ImageWithTouch), typeof(ImageWithTouchRenderer2))]
+[assembly: ExportRenderer(typeof(ImageWithTouch), typeof(ImageWithTouchRenderer))]
 
 namespace DrawIt.WinPhone
 {
-    public class ImageWithTouchRenderer2 : ViewRenderer<Xamarin.Forms.Image, WPControls.Image>
+    public class ImageWithTouchRenderer
     {
-        protected override void OnModelChanged()
-        {
-            base.OnModelChanged();
+        // TODO: Add renderer once the backend code from Xamarin becomes complete.
 
-            var currentView = (Image)Control;
+        //protected override void OnModelChanged()
+        //{
+        //    base.OnModelChanged();
 
-            SetNativeControl(new DrawView(currentView.Context));
-        }
+        //    var currentView = (Image)Control;
 
-        protected override void OnHandlePropertyChanged(object sender, PropertyChangedEventArgs e)
-        {
-            base.OnHandlePropertyChanged(sender, e);
+        //    SetNativeControl(new DrawView(currentView.Context));
+        //}
 
-            //if (e.PropertyName == ImageWithTouch.CurrentLineColorProperty.PropertyName)
-            //{
-            //    ((DrawView)Control).CurrentLineColor = ((ImageWithTouch)Model).CurrentLineColor.ToAndroid();
-            //}
-        }
+        //protected override void OnHandlePropertyChanged(object sender, PropertyChangedEventArgs e)
+        //{
+        //    base.OnHandlePropertyChanged(sender, e);
+
+        //    //if (e.PropertyName == ImageWithTouch.CurrentLineColorProperty.PropertyName)
+        //    //{
+        //    //    ((DrawView)Control).CurrentLineColor = ((ImageWithTouch)Model).CurrentLineColor.ToAndroid();
+        //    //}
+        //}
     }
 }
