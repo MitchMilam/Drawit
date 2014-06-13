@@ -1,40 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
+﻿using System.Windows.Media;
+using DrawIt;
+using DrawIt.WinPhone;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.WinPhone;
 using System.ComponentModel;
-using DrawIt;
-using DrawIt.WinPhone;
 
-//[assembly: ExportRenderer(typeof(ImageWithTouch), typeof(ImageWithTouchRenderer))]
+[assembly: ExportRenderer(typeof(ImageWithTouch), typeof(ImageWithTouchRenderer))]
 
 namespace DrawIt.WinPhone
 {
-    public class ImageWithTouchRenderer
+    public class ImageWithTouchRenderer : ViewRenderer<ImageWithTouch, DrawView>
     {
-        // TODO: Add renderer once the backend code from Xamarin becomes complete.
+        protected override void OnElementChanged(ElementChangedEventArgs<ImageWithTouch> e)
+        {
+            base.OnElementChanged(e);
 
-        //protected override void OnModelChanged()
-        //{
-        //    base.OnModelChanged();
+            SetNativeControl(new DrawView());
+        }
 
-        //    var currentView = (Image)Control;
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            base.OnElementPropertyChanged(sender, e);
 
-        //    SetNativeControl(new DrawView(currentView.Context));
-        //}
+            if (e.PropertyName == ImageWithTouch.CurrentLineColorProperty.PropertyName)
+            {
+                UpdateControl();
+            }
+        }
 
-        //protected override void OnHandlePropertyChanged(object sender, PropertyChangedEventArgs e)
-        //{
-        //    base.OnHandlePropertyChanged(sender, e);
+        private void UpdateControl()
+        {
+            var converter = new ColorConverter();
 
-        //    //if (e.PropertyName == ImageWithTouch.CurrentLineColorProperty.PropertyName)
-        //    //{
-        //    //    ((DrawView)Control).CurrentLineColor = ((ImageWithTouch)Model).CurrentLineColor.ToAndroid();
-        //    //}
-        //}
+            Control.CurrentBrush =
+                (SolidColorBrush)
+                    converter.Convert(Element.CurrentLineColor, null, null, null);
+        }
     }
 }

@@ -11,7 +11,6 @@ namespace DrawIt.Android
 {
     public class ImageWithTouchRenderer : ViewRenderer<ImageWithTouch, DrawView> 
     {
-        // Override the OnModelChanged method so we can tweak this renderer post-initial setup
         protected override void OnElementChanged(ElementChangedEventArgs<ImageWithTouch> e)
         {
             base.OnElementChanged(e);

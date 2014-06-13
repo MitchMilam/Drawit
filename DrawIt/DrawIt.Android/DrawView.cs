@@ -7,12 +7,6 @@ namespace DrawIt.Android
     // Original Source: http://csharp-tricks-en.blogspot.com/2014/05/android-draw-on-screen-by-finger.html
     public class DrawView : View
     {
-        //public DrawView(Context context)
-        //    : base(context)
-        //{
-        //    Start();
-        //}
-
         public DrawView(Context context)
             : base(context)
         {
@@ -29,7 +23,7 @@ namespace DrawIt.Android
         private Canvas DrawCanvas;
         private Bitmap CanvasBitmap;
 
-        public void Start()
+        private void Start()
 		{
 			CurrentLineColor = Color.Black;
 			PenWidth = 5.0f;
