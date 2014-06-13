@@ -9,26 +9,32 @@ using DrawIt.Android;
 
 namespace DrawIt.Android
 {
-    public class ImageWithTouchRenderer : ImageRenderer
+    public class ImageWithTouchRenderer : ViewRenderer<ImageWithTouch, DrawView> 
     {
         // Override the OnModelChanged method so we can tweak this renderer post-initial setup
-        protected override void OnModelChanged(VisualElement oldModel, VisualElement newModel)
+        protected override void OnElementChanged(ElementChangedEventArgs<ImageWithTouch> e)
         {
-            base.OnModelChanged(oldModel, newModel);
+            base.OnElementChanged(e);
 
-            var currentView = (global::Android.Widget.ImageView)Control;
-
-            SetNativeControl(new DrawView(currentView.Context));
+            if (e.OldElement == null)
+            {
+                SetNativeControl(new DrawView(Context));
+            }
         }
 
-        protected override void OnHandlePropertyChanged(object sender, PropertyChangedEventArgs e)
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            base.OnHandlePropertyChanged(sender, e);
+            base.OnElementPropertyChanged(sender, e);
 
             if (e.PropertyName == ImageWithTouch.CurrentLineColorProperty.PropertyName)
             {
-                ((DrawView)Control).CurrentLineColor = ((ImageWithTouch)Model).CurrentLineColor.ToAndroid();
+                UpdateControl();
             }
+        }
+
+        private void UpdateControl()
+        {
+            Control.CurrentLineColor = Element.CurrentLineColor.ToAndroid();
         }
     }
 }

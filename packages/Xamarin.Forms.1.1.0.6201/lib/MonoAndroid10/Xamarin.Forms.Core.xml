@@ -110,9 +110,10 @@ namespace FormsGallery
             <summary>Initializes a new instance of the AbsoluteLayout class.</summary>
             <remarks>
                 <para>
-                    <example>
               The following example shows the initialization of a new AbsoluteLayout with children.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
 var layout = new AbsoluteLayout {
   Children = {
     firstChild,
@@ -120,8 +121,8 @@ var layout = new AbsoluteLayout {
     thirdChild
   }
 };
-              ]]></code></example>
-                </para>
+              ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="P:Xamarin.Forms.AbsoluteLayout.AutoSize">
@@ -286,7 +287,7 @@ var indicator = new ActivityIndicator {
             <remarks>To be added.</remarks>
         </member>
         <member name="C:Xamarin.Forms.Animation">
-            <summary>To be added.</summary>
+            <summary>Creates a new <see cref="T:Xamarin.Forms.Animation" /> object with default values.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="C:Xamarin.Forms.Animation(System.Action{System.Double},System.Double,System.Double,Xamarin.Forms.Easing,System.Action)">
@@ -295,14 +296,14 @@ var indicator = new ActivityIndicator {
             <param name="end">To be added.</param>
             <param name="easing">To be added.</param>
             <param name="finished">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Creates a new <see cref="T:Xamarin.Forms.Animation" /> object with the specified parameters.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Animation.Add(System.Double,System.Double,Xamarin.Forms.Animation)">
             <param name="beginAt">To be added.</param>
             <param name="finishAt">To be added.</param>
             <param name="animation">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Adds an <see cref="T:Xamarin.Forms.Animation" /> object to this <see cref="T:Xamarin.Forms.Animation" /> that begins at <paramref name="beginAt" /> and finishes at <paramref name="finishAt" />.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Animation.Commit(Xamarin.Forms.IAnimatable,System.String,System.UInt32,System.UInt32,Xamarin.Forms.Easing,System.Action{System.Double,System.Boolean},System.Func{System.Boolean})">
@@ -313,16 +314,16 @@ var indicator = new ActivityIndicator {
             <param name="easing">To be added.</param>
             <param name="finished">To be added.</param>
             <param name="repeat">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Runs the <paramref name="owner" /> animation with the supplied parameters.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Animation.GetCallback">
-            <summary>To be added.</summary>
-            <returns>To be added.</returns>
+            <summary>Returns a callback that recursively runs the eased animation step on this <see cref="T:Xamarin.Forms.Animation" /> object and those of its children that have begun and not finished.</summary>
+            <returns>A callback that recursively runs the eased animation step on this <see cref="T:Xamarin.Forms.Animation" /> object and those of its children that have begun and not finished.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Animation.GetEnumerator">
-            <summary>To be added.</summary>
+            <summary>Returns an enumerator that can be used to iterate over the child <see cref="T:Xamarin.Forms.Animation" /> objects of this <see cref="T:Xamarin.Forms.Animation" /> object.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -330,7 +331,7 @@ var indicator = new ActivityIndicator {
             <param name="beginAt">To be added.</param>
             <param name="finishAt">To be added.</param>
             <param name="animation">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Adds an <see cref="T:Xamarin.Forms.Animation" /> object to this <see cref="T:Xamarin.Forms.Animation" /> that begins at <paramref name="beginAt" /> and finishes at <paramref name="finishAt" />.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -338,7 +339,7 @@ var indicator = new ActivityIndicator {
             <param name="animation">To be added.</param>
             <param name="beginAt">To be added.</param>
             <param name="finishAt">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Adds <paramref name="animation" /> to the children of this <see cref="T:Xamarin.Forms.Animation" /> object and sets the start and end times of <paramref name="animation" /> to <paramref name="beginAt" /> and <paramref name="finishAt" />, respectively.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -349,7 +350,7 @@ var indicator = new ActivityIndicator {
             <param name="easing">To be added.</param>
             <param name="beginAt">To be added.</param>
             <param name="finishAt">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Creates a new <see cref="T:Xamarin.Forms.Animation" /> object with the specified parameters, and adds it to the children of this <see cref="T:Xamarin.Forms.Animation" /> object.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -360,9 +361,9 @@ var indicator = new ActivityIndicator {
         <member name="M:Xamarin.Forms.AnimationExtensions.AbortAnimation(Xamarin.Forms.IAnimatable,System.String)">
             <param name="self">To be added.</param>
             <param name="handle">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Stops the animation.</summary>
             <returns>To be added.</returns>
-            <remarks>To be added.</remarks>
+            <remarks>If <paramref name="handle" /> refers to an animation that belongs to this <see cref="T:Xamarin.Forms.IAnimatable" /> instance, then its tweener handlers are removed, the tweener is stopped, the animation is removed from this <see cref="T:Xamarin.Forms.IAnimatable" /> instance, and it is marked as finished. If <paramref name="handle" /> refers to one of the kinetics that belong to this <see cref="T:Xamarin.Forms.IAnimatable" /> instance, then it and its ticker are removed.</remarks>
         </member>
         <member name="M:Xamarin.Forms.AnimationExtensions.Animate(Xamarin.Forms.IAnimatable,System.String,System.Action{System.Double},System.UInt32,System.UInt32,Xamarin.Forms.Easing,System.Action{System.Double,System.Boolean},System.Func{System.Boolean})">
             <param name="self">To be added.</param>
@@ -373,7 +374,7 @@ var indicator = new ActivityIndicator {
             <param name="easing">To be added.</param>
             <param name="finished">To be added.</param>
             <param name="repeat">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Sets the specified parameters and starts the animation.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.AnimationExtensions.Animate(Xamarin.Forms.IAnimatable,System.String,Xamarin.Forms.Animation,System.UInt32,System.UInt32,Xamarin.Forms.Easing,System.Action{System.Double,System.Boolean},System.Func{System.Boolean})">
@@ -385,7 +386,7 @@ var indicator = new ActivityIndicator {
             <param name="easing">To be added.</param>
             <param name="finished">To be added.</param>
             <param name="repeat">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Sets the specified parameters and starts the animation.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.AnimationExtensions.Animate(Xamarin.Forms.IAnimatable,System.String,System.Action{System.Double},System.Double,System.Double,System.UInt32,System.UInt32,Xamarin.Forms.Easing,System.Action{System.Double,System.Boolean},System.Func{System.Boolean})">
@@ -399,7 +400,7 @@ var indicator = new ActivityIndicator {
             <param name="easing">To be added.</param>
             <param name="finished">To be added.</param>
             <param name="repeat">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Sets the specified parameters and starts the animation.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.AnimationExtensions.Animate``1(Xamarin.Forms.IAnimatable,System.String,System.Func{System.Double,``0},System.Action{``0},System.UInt32,System.UInt32,Xamarin.Forms.Easing,System.Action{``0,System.Boolean},System.Func{System.Boolean})">
@@ -413,7 +414,7 @@ var indicator = new ActivityIndicator {
             <param name="easing">To be added.</param>
             <param name="finished">To be added.</param>
             <param name="repeat">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Sets the specified parameters and starts the animation.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.AnimationExtensions.AnimateKinetic(Xamarin.Forms.IAnimatable,System.String,System.Func{System.Double,System.Double,System.Boolean},System.Double,System.Double,System.Action)">
@@ -423,13 +424,13 @@ var indicator = new ActivityIndicator {
             <param name="velocity">To be added.</param>
             <param name="drag">To be added.</param>
             <param name="finished">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Sets the specified parameters and starts the kinetic animation.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.AnimationExtensions.AnimationIsRunning(Xamarin.Forms.IAnimatable,System.String)">
             <param name="self">To be added.</param>
             <param name="handle">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Returns a Boolean value that indicates whether or not the animation that is specified by <paramref name="handle" /> is running.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -438,9 +439,9 @@ var indicator = new ActivityIndicator {
             <param name="end">To be added.</param>
             <param name="reverseVal">To be added.</param>
             <param name="reverse">To be added.</param>
-            <summary>To be added.</summary>
-            <returns>To be added.</returns>
-            <remarks>To be added.</remarks>
+            <summary>Returns a function that performs a linear interpolation between <paramref name="start" /> and <paramref name="end" />.</summary>
+            <returns>A function that performs a linear interpolation between <paramref name="start" /> and <paramref name="end" />. Application developers can pass values between 0.0f and 1.0f to this function in order to recieve a value that is offset from <paramref name="start" /> or <paramref name="end" />, depending on the value of <paramref name="reverse" />, by the passed value times the distance between <paramref name="start" /> and <paramref name="end" />.</returns>
+            <remarks>If <paramref name="reverse" /> is <see langword="true" />, then the interpolation happens between <paramref name="start" /> and <paramref name="reverseVal" />.</remarks>
         </member>
         <member name="T:Xamarin.Forms.Aspect">
             <summary>Defines how a control adjust its content.</summary>
@@ -684,14 +685,15 @@ class MyBindable : BindableObject
             <param name="path">A <see cref="T:System.String" /> indicating the property path to bind to.</param>
             <summary>Creates and applies a binding to a property.</summary>
             <remarks>
-                <para>
-                    <example language="C#">The following example shows how to use the extension method to set a binding.<code lang="C#"><![CDATA[
+                <para>The following example shows how to use the extension method to set a binding.</para>
+                <example>
+                    <code lang="C#"><![CDATA[
 var label = new Label ();
 label.SetBinding (Label.TextProperty, "Name");
 label.BindingContext = new {Name = "John Doe", Company = "Xamarin"};
 Debug.WriteLine (label.Text); //prints "John Doe"
-        ]]></code></example>
-                </para>
+        ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="M:Xamarin.Forms.BindableObjectExtensions.SetBinding``1(Xamarin.Forms.BindableObject,Xamarin.Forms.BindableProperty,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},Xamarin.Forms.BindingMode,Xamarin.Forms.IValueConverter,System.String)">
@@ -705,8 +707,9 @@ Debug.WriteLine (label.Text); //prints "John Doe"
             <summary>Creates and applies a binding from an expression.</summary>
             <remarks>
                 <para>This extension method uses Expression instead of path to creates and sets bindings. Using Expressions is more refactoring friendly.</para>
-                <para>
-                    <example language="C#">This following example illustrates the setting of a binding using the extension method.<code lang="C#"><![CDATA[
+                <para>This following example illustrates the setting of a binding using the extension method.</para>
+                <example>
+                    <code lang="C#"><![CDATA[
 public class PersonViewModel
 {
   public string Name { get; set; }
@@ -720,15 +723,16 @@ label.BindingContext = new PersonViewModel {
   Company = "Xamarin"
 };
 Debug.WriteLine (label.Text); //prints "John Doe"
-      ]]></code></example>
-                </para>
+      ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="T:Xamarin.Forms.BindableProperty">
             <summary>A BindableProperty is a backing store for properties allowing bindings on <see cref="T:Xamarin.Forms.BindableObject" />.</summary>
             <remarks>
-                <para>
-                    <example language="C#">The following example shows the creation of a BindableProperty as a backing store for a property. It shows also how to bind to that BindableProperty.<code lang="C#"><![CDATA[
+                <para>The following example shows the creation of a BindableProperty as a backing store for a property. It shows also how to bind to that BindableProperty.</para>
+                <example>
+                    <code lang="C#"><![CDATA[
 public class MockBindable : BindableObject
 {
   public static readonly BindableProperty FooProperty = 
@@ -750,8 +754,8 @@ var bindable = new MockBindable ();
 bindable.SetBinding (MockBindable.FooProperty, "Name");
 bindable.BindingContext = model;
 Console.WriteLine (bindable.Foo); //prints "John Doe"
-    ]]></code></example>
-                </para>
+    ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="M:Xamarin.Forms.BindableProperty.Create(System.String,System.Type,System.Type,System.Object,Xamarin.Forms.BindingMode,Xamarin.Forms.BindableProperty+ValidateValueDelegate,Xamarin.Forms.BindableProperty+BindingPropertyChangedDelegate,Xamarin.Forms.BindableProperty+BindingPropertyChangingDelegate,Xamarin.Forms.BindableProperty+CoerceValueDelegate)">
@@ -796,8 +800,9 @@ Console.WriteLine (bindable.Foo); //prints "John Doe"
             <returns>A newly created BindableProperty.</returns>
             <remarks>
                 <para>An attached BindableProperty is a kind of BindableProperty meant to be applied to another class.</para>
-                <para>
-                    <example language="C#">The following example shows hte declaration and usage of an attached BindableProperty:<code lang="C#"><![CDATA[
+                <para>The following example shows hte declaration and usage of an attached BindableProperty:</para>
+                <example>
+                    <code lang="C#"><![CDATA[
 public class Bindable : BindableObject
 {
 }
@@ -828,8 +833,8 @@ var bindable = new MockBindable ();
 bindable.SetBinding (MyClass.FooProperty, "Name");
 bindable.BindingContext = model;
 Console.WriteLine (MyClass.GetFoo (bindable)); //prints "John Doe"
-      ]]></code></example>
-                </para>
+      ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="M:Xamarin.Forms.BindableProperty.CreateAttachedReadOnly``2(System.Linq.Expressions.Expression{System.Func{Xamarin.Forms.BindableObject,``1}},``1,Xamarin.Forms.BindingMode,Xamarin.Forms.BindableProperty+ValidateValueDelegate{``1},Xamarin.Forms.BindableProperty+BindingPropertyChangedDelegate{``1},Xamarin.Forms.BindableProperty+BindingPropertyChangingDelegate{``1},Xamarin.Forms.BindableProperty+CoerceValueDelegate{``1})">
@@ -874,8 +879,9 @@ Console.WriteLine (MyClass.GetFoo (bindable)); //prints "John Doe"
             <returns>A newly created BindablePropertyKey.</returns>
             <remarks>
                 <para>A BindablePropertyKey is used to restrict write access to a property, either via SetValue() or binding. A BindableProperty is usually defined too, to give broader read access</para>
-                <para>
-                    <example language="C#">The following example shows the creation of a BindablePropertyKey.<code lang="C#"><![CDATA[
+                <para>The following example shows the creation of a BindablePropertyKey.</para>
+                <example>
+                    <code lang="C#"><![CDATA[
 class Bindable : BindableObject
 {
   internal static readonly BindablePropertyKey FooPropertyKey = 
@@ -888,8 +894,8 @@ class Bindable : BindableObject
     internal set { SetValue (FooPropertyKey, value); } 
   }
 }
-      ]]></code></example>
-                </para>
+      ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="P:Xamarin.Forms.BindableProperty.DeclaringType">
@@ -985,8 +991,9 @@ class Bindable : BindableObject
         <member name="T:Xamarin.Forms.BindablePropertyKey">
             <summary>The secret key to a BindableProperty, used to implement a BindableProperty with restricted write access.</summary>
             <remarks>
-                <para>
-                    <example language="C#">The following example shows the creation of a BindablePropertyKey. Write access is <see langword="internal" /> while read access is <see langword="public" />.<code lang="C#"><![CDATA[
+                <para>The following example shows the creation of a BindablePropertyKey. Write access is <see langword="internal" /> while read access is <see langword="public" />.</para>
+                <example>
+                    <code lang="C#"><![CDATA[
 class Bindable : BindableObject
 {
   internal static readonly BindablePropertyKey FooPropertyKey = 
@@ -999,8 +1006,8 @@ class Bindable : BindableObject
     internal set { SetValue (FooPropertyKey, value); } 
   }
 }
-      ]]></code></example>
-                </para>
+      ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="P:Xamarin.Forms.BindablePropertyKey.BindableProperty">
@@ -1012,16 +1019,21 @@ class Bindable : BindableObject
             <summary>A single 1:1 immutable data binding.</summary>
             <remarks>This class is immutable.</remarks>
         </member>
+        <member name="C:Xamarin.Forms.Binding">
+            <summary>Constructs and initializes a new instance of the <see cref="T:Xamarin.Forms.Binding" /> class.</summary>
+            <remarks />
+        </member>
         <member name="C:Xamarin.Forms.Binding(System.String,Xamarin.Forms.BindingMode,Xamarin.Forms.IValueConverter,System.Object,System.String)">
             <param name="path">The property path.</param>
             <param name="mode">The binding mode. This property is optional. Default is <see cref="E:Xamarin.Forms.BindingMode.Default" />.</param>
             <param name="converter">The converter. This parameter is optional. Default is <see langword="null" />.</param>
             <param name="converterParameter">An user-defined parameter to pass to the converter. This parameter is optional. Default is <see langword="null" />.</param>
             <param name="stringFormat">A String format. This parameter is optional. Default is <see langword="null" />.</param>
-            <summary>Initializes a new instance of the Binding class.</summary>
+            <summary>Constructs and initializes a new instance of the <see cref="T:Xamarin.Forms.Binding" /> class.</summary>
             <remarks>
-                <para>
-                    <example language="C#">The following example shows how to set a binding to a property with a BindingMode and Converter:<code lang="C#"><![CDATA[
+                <para>The following example shows how to set a binding to a property with a BindingMode and Converter:</para>
+                <example>
+                    <code lang="C#"><![CDATA[
 public class PersonViewModel
 {
   public string Name { get; set; }
@@ -1055,17 +1067,17 @@ Debug.WriteLine (label.Text); //prints "eoD nhoJ". ReverseConverter.Convert () i
 
 label.Text = "ooF";
 Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () is invoked in this case. The label Text change is propagated back as the BindingMode is TwoWay.
-        ]]></code></example>
-                </para>
+        ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="P:Xamarin.Forms.Binding.Converter">
-            <summary>Gets the converter to be used for this binding ?</summary>
+            <summary>Gets or sets the converter to be used for this binding ?</summary>
             <value>An IValueConverter, or <see langword="null" />.</value>
             <remarks />
         </member>
         <member name="P:Xamarin.Forms.Binding.ConverterParameter">
-            <summary>Gets the parameter passed as argument to the converter.</summary>
+            <summary>Gets or sets the parameter passed as argument to the converter.</summary>
             <value>An object, or <see langword="null" />.</value>
             <remarks />
         </member>
@@ -1079,8 +1091,9 @@ Debug.WriteLine (person.Name); //prints "Foo". ReverseConverter.ConvertBack () i
             <summary>This is a convenient factory method to create a binding from an expression, instead of a property name. This api is more resilient to refactoring.</summary>
             <returns>A newly created binding.</returns>
             <remarks>
-                <para>
-                    <example language="C#">The following example shows how to set a binding to a property :<code lang="C#"><![CDATA[
+                <para>The following example shows how to set a binding to a property :</para>
+                <example>
+                    <code lang="C#"><![CDATA[
 public class PersonViewModel
 {
   public string Name { get; set; }
@@ -1092,12 +1105,12 @@ PersonViewModel person;
 label.BindingContext = person = new PersonViewModel { Name = "John Doe", Company= "Xamarin" };
 label.SetBinding (Label.TextProperty, Binding.Create&lt;PersonViewModel&gt; (vm =&gt; vm.Name));
 Debug.WriteLine (label.Text); //prints "John Doe".
-        ]]></code></example>
-                </para>
+        ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="P:Xamarin.Forms.Binding.Path">
-            <summary>Gets the path of the property</summary>
+            <summary>Gets or sets the path of the property</summary>
             <value>A string indicating the path to the property.</value>
             <remarks />
         </member>
@@ -1118,7 +1131,7 @@ Debug.WriteLine (label.Text); //prints "John Doe".
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.BindingBase.Mode">
-            <summary>To be added.</summary>
+            <summary>Gets or sets the mode for this binding.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
@@ -1150,11 +1163,18 @@ label.AddBinding (new Binding (Label.TextProperty, "Price") {
             </remarks>
             <altmember cref="M:System.String.Format" />
         </member>
+        <member name="M:Xamarin.Forms.BindingBase.ThrowIfApplied">
+            <summary>Throws an <see cref="T:System.InvalidOperationException" /> if the binding has been applied.</summary>
+            <remarks>
+                <para>Use this method in property setters as bindings can not be changed once applied.</para>
+            </remarks>
+        </member>
         <member name="T:Xamarin.Forms.BindingMode">
             <summary>The direction of changes propagation for bindings.</summary>
             <remarks>
-                <para>
-                    <example language="C#">The following examples shows some BindingMode use cases.<code lang="C#"><![CDATA[
+                <para>The following examples shows some BindingMode use cases.</para>
+                <example>
+                    <code lang="C#"><![CDATA[
 public class PersonViewModel
 {
   public string Name { get; set; }
@@ -1195,8 +1215,8 @@ viewmodel.Name = "John Doe";
 Debug.WriteLine (label.Text); //prints ""
 label.Text = "Foo";
 Debug.WriteLine (viewmodel.Name); //prints "Foo"
-    ]]></code></example>
-                </para>
+    ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="F:Xamarin.Forms.BindingMode.Default">
@@ -1977,28 +1997,30 @@ Assert.AreEqual (Color.Accent, converter.ConvertFrom ("Accent"));
             <summary>Defines an <see cref="T:System.Windows.Input.ICommand" /> implementation wrapping an <see cref="System.Action" />.</summary>
             <remarks>
                 <para>
-                    <example language="C#">
               The following example creates a new Command and set it to a button.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
 var command = new Command (() =&gt; Debug.WriteLine ("Command executed"));
 var button = new Button {
   Text = "Hit me to execute the command",
   Command = command,
 };
-]]></code></example>
-                </para>
+]]></code>
+                </example>
                 <para>
-                    <example language="C#">
               More useful scenarios takes a parameter
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
 var command = new Command (o =&gt; Debug.WriteLine ("Command executed: {0}", o));
 var button = new Button {
   Text = "Hit me to execute the command",
   Command = command,
   CommandParameter = "button0",
 };
-]]></code></example>
-                </para>
+]]></code>
+                </example>
             </remarks>
         </member>
         <member name="C:Xamarin.Forms.Command(System.Action)">
@@ -2053,17 +2075,18 @@ var button = new Button {
             <summary>Defines an <see cref="T:System.Windows.Input.ICommand" /> implementation wrapping a generic Action&lt;T&gt;.</summary>
             <remarks>
                 <para>
-                    <example language="C#">
               The following example creates a new Command and set it to a button.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example language="C#">
+                    <code lang="C#"><![CDATA[
 var command = new Command&lt;string&gt; (s =&gt; Debug.WriteLine ("Command executed: {0}", s));
 var button = new Button {
   Text = "Hit me to execute the command",
   Command = command,
   CommandParameter = "button0",
 };
-]]></code></example>
-                </para>
+]]></code>
+                </example>
             </remarks>
         </member>
         <member name="C:Xamarin.Forms.Command`1(`0System`0.`0Action`0{`0T`0})">
@@ -2084,50 +2107,50 @@ var button = new Button {
             <remarks>To be added.</remarks>
         </member>
         <member name="C:Xamarin.Forms.ConcurrentDictionary`2">
-            <summary>To be added.</summary>
+            <summary>Creates a new <see cref="T:Xamarin.Forms.ConcurrentDictionary`2" /> object with default values.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="C:Xamarin.Forms.ConcurrentDictionary`2(``10System`1``10`1.``10Collections`1``10`1.``10Generic`1``10`1.``10IEnumerable`1``10`1{``10System`1``10`1.``10Collections`1``10`1.``10Generic`1``10`1.``10KeyValuePair`1``10`1{``10TKey`1``10`1,``10TValue`1``10`1}})">
             <param name="collection">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Creates a new <see cref="T:Xamarin.Forms.ConcurrentDictionary`2" /> object and fills it with the key/value pairs that are in <paramref name="collection" />.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="C:Xamarin.Forms.ConcurrentDictionary`2(``10System`1``10`1.``10Collections`1``10`1.``10Generic`1``10`1.``10IEqualityComparer`1``10`1{``10TKey`1``10`1})">
             <param name="comparer">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Creates a new <see cref="T:Xamarin.Forms.ConcurrentDictionary`2" /> object that will use the provided <paramref name="comparer" /> to determine if two values are equal.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="C:Xamarin.Forms.ConcurrentDictionary`2(``10System`1``10`1.``10Collections`1``10`1.``10Generic`1``10`1.``10IEnumerable`1``10`1{``10System`1``10`1.``10Collections`1``10`1.``10Generic`1``10`1.``10KeyValuePair`1``10`1{``10TKey`1``10`1,``10TValue`1``10`1}},``10System`1``10`1.``10Collections`1``10`1.``10Generic`1``10`1.``10IEqualityComparer`1``10`1{``10TKey`1``10`1})">
             <param name="collection">To be added.</param>
             <param name="comparer">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Creates a new <see cref="T:Xamarin.Forms.ConcurrentDictionary`2" /> object that will use the provided <paramref name="comparer" /> to determine if two values are equal, and fills it with the key/value pairs that are in <paramref name="collection" />.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="C:Xamarin.Forms.ConcurrentDictionary`2(``10System`1``10`1.``10Int32`1``10`1,``10System`1``10`1.``10Int32`1``10`1)">
-            <param name="concurrencyLevel">To be added.</param>
-            <param name="capacity">To be added.</param>
-            <summary>To be added.</summary>
+            <param name="concurrencyLevel">Ignored.</param>
+            <param name="capacity">Ignored.</param>
+            <summary>Provided for compatibility reasons. Ignores the <paramref name="concurrencyLevel" /> and <paramref name="capacity" /> parameters. Creates a new <see cref="T:Xamarin.Forms.ConcurrentDictionary`2" /> object a default comparer.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="C:Xamarin.Forms.ConcurrentDictionary`2(``10System`1``10`1.``10Int32`1``10`1,``10System`1``10`1.``10Collections`1``10`1.``10Generic`1``10`1.``10IEnumerable`1``10`1{``10System`1``10`1.``10Collections`1``10`1.``10Generic`1``10`1.``10KeyValuePair`1``10`1{``10TKey`1``10`1,``10TValue`1``10`1}},``10System`1``10`1.``10Collections`1``10`1.``10Generic`1``10`1.``10IEqualityComparer`1``10`1{``10TKey`1``10`1})">
-            <param name="concurrencyLevel">To be added.</param>
-            <param name="collection">To be added.</param>
+            <param name="concurrencyLevel">Ignored.</param>
+            <param name="collection">Ignored.</param>
             <param name="comparer">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Provided for compatibility reasons. Ignores the <paramref name="concurrencyLevel" /> parameter. Creates a new <see cref="T:Xamarin.Forms.ConcurrentDictionary`2" /> object with <paramref name="collection" /> and <paramref name="comparer" />.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="C:Xamarin.Forms.ConcurrentDictionary`2(``10System`1``10`1.``10Int32`1``10`1,``10System`1``10`1.``10Int32`1``10`1,``10System`1``10`1.``10Collections`1``10`1.``10Generic`1``10`1.``10IEqualityComparer`1``10`1{``10TKey`1``10`1})">
             <param name="concurrencyLevel">To be added.</param>
             <param name="capacity">To be added.</param>
             <param name="comparer">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Provided for compatibility reasons. Ignores the <paramref name="concurrencyLevel" /> and <paramref name="capacity" /> parameters. Creates a new <see cref="T:Xamarin.Forms.ConcurrentDictionary`2" /> object with <paramref name="comparer" />.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.AddOrUpdate(``10TKey`1``10`1,``10System`1``10`1.``10Func`1``10`1{``10TKey`1``10`1,``10TValue`1``10`1},``10System`1``10`1.``10Func`1``10`1{``10TKey`1``10`1,``10TValue`1``10`1,``10TValue`1``10`1})">
             <param name="key">To be added.</param>
             <param name="addValueFactory">To be added.</param>
             <param name="updateValueFactory">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Adds a value to the dictionary if the value is not present, or updates the value if it is already present.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -2135,192 +2158,196 @@ var button = new Button {
             <param name="key">To be added.</param>
             <param name="addValue">To be added.</param>
             <param name="updateValueFactory">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Adds a value to the dictionary if the value is not present, or updates the value if it is already present.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.Clear">
-            <summary>To be added.</summary>
+            <summary>Removes all values from the dictionary.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.ContainsKey(``10TKey`1``10`1)">
             <param name="key">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Returns a Boolean value that indicates whether or not the dictionary indexes a value by <paramref name="key" />.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.ConcurrentDictionary`2.Count">
-            <summary>To be added.</summary>
+            <summary>Gets the number of items in the dictionary.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.GetEnumerator">
-            <summary>To be added.</summary>
+            <summary>Gets an enumerator that can be used to iterate over the values in the dictionary.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.GetOrAdd(``10TKey`1``10`1,``10System`1``10`1.``10Func`1``10`1{``10TKey`1``10`1,``10TValue`1``10`1})">
             <param name="key">To be added.</param>
             <param name="valueFactory">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Returns the value selected by <paramref name="key" /> if it is present, or inserts a value in that location by using <paramref name="valueFactory" /> and returns the new value.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.GetOrAdd(``10TKey`1``10`1,``10TValue`1``10`1)">
             <param name="key">To be added.</param>
             <param name="value">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Returns the value selected by <paramref name="key" /> if it is present, or inserts <paramref name="value" /> into that location and returns it.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.ConcurrentDictionary`2.IsEmpty">
-            <summary>To be added.</summary>
+            <summary>Gets a Boolean value that indicates whether or not the dictionary is empty.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.ConcurrentDictionary`2.Item(``10TKey`1``10`1)">
             <param name="key">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Gets or sets the item identified by <paramref name="key" />.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.ConcurrentDictionary`2.Keys">
-            <summary>To be added.</summary>
+            <summary>Gets a list of all the keys in the dictionary.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#Add(``10System`1``10`1.``10Collections`1``10`1.``10Generic`1``10`1.``10KeyValuePair`1``10`1{``10TKey`1``10`1,``10TValue`1``10`1})">
             <param name="pair">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Adds a key/value pair to the dictionary.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#Contains(``10System`1``10`1.``10Collections`1``10`1.``10Generic`1``10`1.``10KeyValuePair`1``10`1{``10TKey`1``10`1,``10TValue`1``10`1})">
             <param name="pair">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Returns a Boolean value that indicates whether or not the dictionary contains <paramref name="pair" />.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#CopyTo(``10System`1``10`1.``10Collections`1``10`1.``10Generic`1``10`1.``10KeyValuePair`1``10`1{``10TKey`1``10`1,``10TValue`1``10`1}[],``10System`1``10`1.``10Int32`1``10`1)">
             <param name="array">To be added.</param>
             <param name="startIndex">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Copies the dictionary, as key/value pairs, to an <paramref name="array" />, starting at <paramref name="startIndex" /> in <paramref name="array" />.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#IsReadOnly">
-            <summary>To be added.</summary>
+            <summary>
+                <see langword="false" />. <see cref="T:Xamarin.Forms.ConcurrentDictionary`2" /> objects are readable and writable.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#Remove(``10System`1``10`1.``10Collections`1``10`1.``10Generic`1``10`1.``10KeyValuePair`1``10`1{``10TKey`1``10`1,``10TValue`1``10`1})">
             <param name="pair">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Removes a key/value pair from the dictionary.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#Generic#IDictionary{TKey,TValue}#Add(``10TKey`1``10`1,``10TValue`1``10`1)">
             <param name="key">To be added.</param>
             <param name="value">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Adds a key/value pair to the dictionary.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#Generic#IDictionary{TKey,TValue}#Remove(``10TKey`1``10`1)">
             <param name="key">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Removes the value that is referenced by <paramref name="key" /> from the dictionary.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#ICollection#CopyTo(``10System`1``10`1.``10Array`1``10`1,``10System`1``10`1.``10Int32`1``10`1)">
             <param name="array">To be added.</param>
             <param name="startIndex">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Copies the dictionary, as key/value pairs, to <paramref name="array" />, starting at <paramref name="startIndex" /> in <paramref name="array" />.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#ICollection#IsSynchronized">
-            <summary>To be added.</summary>
+            <summary>
+                <see langword="true" />. <see cref="T:Xamarin.Forms.ConcurrentDictionary`2" /> objects are synchronized.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#ICollection#SyncRoot">
-            <summary>To be added.</summary>
+            <summary>Gets a lockable reference to the dictionary, so that you can use it for synchronization.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#IDictionary#Add(``10System`1``10`1.``10Object`1``10`1,``10System`1``10`1.``10Object`1``10`1)">
             <param name="key">To be added.</param>
             <param name="value">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Adds <paramref name="value" /> to the dictionary, referenced by <paramref name="key" />.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#IDictionary#Contains(``10System`1``10`1.``10Object`1``10`1)">
             <param name="key">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Returns <see langword="true" /> if <paramref name="key" /> is a string and selects a value in the dictionary.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#IDictionary#GetEnumerator">
-            <summary>To be added.</summary>
+            <summary>Gets an enumerator that can be used to iterate over entries in the dictionary.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#IDictionary#IsFixedSize">
-            <summary>To be added.</summary>
+            <summary>
+                <see langword="false" />. <see cref="T:Xamarin.Forms.ConcurrentDictionary`2" /> collections can have items added to them, and can have items removed from them.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#IDictionary#IsReadOnly">
-            <summary>To be added.</summary>
+            <summary>
+                <see langword="false" />. <see cref="T:Xamarin.Forms.ConcurrentDictionary`2" /> collections can be read from and written to.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#IDictionary#Item(``10System`1``10`1.``10Object`1``10`1)">
             <param name="key">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Gets the item that is selected by <paramref name="key" />.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#IDictionary#Keys">
-            <summary>To be added.</summary>
+            <summary>Gets a collection that contains the keys in the dictionary.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#IDictionary#Remove(``10System`1``10`1.``10Object`1``10`1)">
             <param name="key">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Removes the item that is selected by <paramref name="key" /> from the dictionary.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#IDictionary#Values">
-            <summary>To be added.</summary>
+            <summary>Gets a collection of the values in this dictionary.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.System#Collections#IEnumerable#GetEnumerator">
-            <summary>To be added.</summary>
+            <summary>Gets an enumerator that can be used to iterate over entries in the dictionary.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.ToArray">
-            <summary>To be added.</summary>
+            <summary>Puts the key and value into an array. The key appears first, followed by the value.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.TryAdd(``10TKey`1``10`1,``10TValue`1``10`1)">
             <param name="key">To be added.</param>
             <param name="value">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Attempts to add a key/value pair to the dictionary, and returns a Boolean value that indicates whether or not the valued was added.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.TryGetValue(``10TKey`1``10`1,``10TValue`1``10`1@)">
             <param name="key">To be added.</param>
             <param name="value">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Attempts to get the value selected by <paramref name="key" /> and then place it in <paramref name="value" />. Returns a Boolean value that indicates whether or not the operation succeeded.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ConcurrentDictionary`2.TryRemove(``10TKey`1``10`1,``10TValue`1``10`1@)">
             <param name="key">To be added.</param>
             <param name="value">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Attempts to get the value indexed by <paramref name="key" /> and store it in <paramref name="value" />. Returns a Boolean value that indicates whether or not the operation succeeded.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -2328,12 +2355,12 @@ var button = new Button {
             <param name="key">To be added.</param>
             <param name="newValue">To be added.</param>
             <param name="comparisonValue">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Attempts to update the value that is selected by <paramref name="key" /> to <paramref name="newValue" />, but only if the current value that is selected by <paramref name="key" /> is identical to <paramref name="comparisonValue" />. Returns a Boolean value that indicates whether or not the operation succeeded.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.ConcurrentDictionary`2.Values">
-            <summary>To be added.</summary>
+            <summary>Gets a collection that contains the values in the dicionary.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
@@ -2521,8 +2548,9 @@ namespace FormsGallery
             <remarks>
                 <para>XAML processor uses to determine the content property.</para>
                 <para>
-                    <example lang="XAML">
-Decorating types with ContentPropertyAttribute allows shorter XAML syntax. As <see cref="T:Xamarin.Forms.ContentView" /> has a ContentProperty attribute applied, this XAML is valid:
+Decorating types with ContentPropertyAttribute allows shorter XAML syntax. As </para>
+                <example>
+                    <see cref="T:Xamarin.Forms.ContentView" /> has a ContentProperty attribute applied, this XAML is valid:
 <code lang="C#"><![CDATA[
 &lt;ContentView&gt;
   &lt;Label Text="Hello, Forms"\&gt;
@@ -2536,7 +2564,6 @@ This is equivalent to the following, more explicit XAML
   &lt;/ContentView.Content&gt;
 &lt;/ContentView&gt;
   ]]></code></example>
-                </para>
             </remarks>
         </member>
         <member name="C:Xamarin.Forms.ContentPropertyAttribute(System.String)">
@@ -2554,14 +2581,15 @@ This is equivalent to the following, more explicit XAML
             <remarks>
                 <para>ContentView has very little use of it's own. It's purpose is to serve as a base class for user-defined compound views.</para>
                 <para>
-                    <example lang="C#">
           The following example shows how to construct a new ContentView with a Label inside.
-          <code lang="C#"><![CDATA[
+          </para>
+                <example>
+                    <code lang="C#"><![CDATA[
 var layout = new ContentView {
   Content = new Label { Text = "I'm Content!" },
 };
-          ]]></code></example>
-                </para>
+          ]]></code>
+                </example>
                 <para>
                     <img href="ContentView.TripleScreenShot.png" />
                 </para>
@@ -2763,76 +2791,80 @@ namespace FormsGallery
             </remarks>
         </member>
         <member name="M:Xamarin.Forms.DefinitionCollection`1.Add(T)">
-            <param name="item">To be added.</param>
-            <summary>To be added.</summary>
+            <param name="item">The <see cref="I:Xamarin.Forms.IDefinition" /> to add.</param>
+            <summary>Adds a <see cref="I:Xamarin.Forms.IDefinition" /> to the collection.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.DefinitionCollection`1.Clear">
-            <summary>To be added.</summary>
+            <summary>Removes all values from this <see cref="T:Xamarin.Forms.DefinitionCollection`1" />.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.DefinitionCollection`1.Contains(T)">
-            <param name="item">To be added.</param>
-            <summary>To be added.</summary>
+            <param name="item">The <see cref="I:Xamarin.Forms.IDefinition" /> to check for in this <see cref="T:Xamarin.Forms.DefinitionCollection`1" /> .</param>
+            <summary>Returns a Boolean value that indicates whether or not this <see cref="T:Xamarin.Forms.DefinitionCollection`1" /> contains the specified <see cref="I:Xamarin.Forms.IDefinition" />.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.DefinitionCollection`1.CopyTo(T[],System.Int32)">
             <param name="array">To be added.</param>
             <param name="arrayIndex">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Copies <see cref="I:Xamarin.Forms.IDefinition" /> instances from this <see cref="T:Xamarin.Forms.DefinitionCollection`1" /> to an array, starting at the specified index.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.DefinitionCollection`1.Count">
-            <summary>To be added.</summary>
+            <summary>Gets the number of <see cref="I:Xamarin.Forms.IDefinition" /> instances contained in this <see cref="T:Xamarin.Forms.DefinitionCollection`1" />.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.DefinitionCollection`1.GetEnumerator">
-            <summary>To be added.</summary>
+            <summary>Returns an enumerator that iterates through the <see cref="I:Xamarin.Forms.IDefinition" /> instances in this <see cref="T:Xamarin.Forms.DefinitionCollection`1" />.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.DefinitionCollection`1.IndexOf(T)">
-            <param name="item">To be added.</param>
-            <summary>To be added.</summary>
+            <param name="item">The <see cref="I:Xamarin.Forms.IDefinition" /> instance to find.</param>
+            <summary>Returns the index of the first occurrence of <paramref name="item" /> in this <see cref="T:Xamarin.Forms.DefinitionCollection`1" />.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.DefinitionCollection`1.Insert(System.Int32,T)">
-            <param name="index">To be added.</param>
-            <param name="item">To be added.</param>
-            <summary>To be added.</summary>
+            <param name="index">The position at which to insert <paramref name="item" />.</param>
+            <param name="item">The <see cref="I:Xamarin.Forms.IDefinition" /> to insert.</param>
+            <summary>Inserts a <see cref="I:Xamarin.Forms.IDefinition" /> into this <see cref="T:Xamarin.Forms.DefinitionCollection`1" /> at the location that is specified by <paramref name="index" />.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.DefinitionCollection`1.IsReadOnly">
-            <summary>To be added.</summary>
-            <value>To be added.</value>
+            <summary>
+                <see langword="false" />. <see cref="T:Xamarin.Forms.DefinitionCollection`1" /> instances can have items added to them and removed from them.</summary>
+            <value>
+                <see langword="false" />
+            </value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.DefinitionCollection`1.Item(System.Int32)">
-            <param name="index">To be added.</param>
-            <summary>To be added.</summary>
+            <param name="index">The location of the item to get or set.</param>
+            <summary>Gets or sets the value indexed by <paramref name="index" />.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="E:Xamarin.Forms.DefinitionCollection`1.ItemSizeChanged">
-            <summary>To be added.</summary>
+            <summary>Event that is raised when the display size of item in the collection changes.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.DefinitionCollection`1.Remove(T)">
-            <param name="item">To be added.</param>
-            <summary>To be added.</summary>
-            <returns>To be added.</returns>
+            <param name="item">The <see cref="I:Xamarin.Forms.IDefinition" /> to remove from this <see cref="T:Xamarin.Forms.DefinitionCollection`1" />.</param>
+            <summary>Removes a <see cref="I:Xamarin.Forms.IDefinition" /> from this <see cref="T:Xamarin.Forms.DefinitionCollection`1" /> and returns <see langword="true" /> if the item was removed.</summary>
+            <returns>
+                <see langword="true" /> if <paramref name="item" /> was in this <see cref="T:Xamarin.Forms.DefinitionCollection`1" /> and was therefore removed. <see langword="false" /> if <paramref name="item" /> was not in this <see cref="T:Xamarin.Forms.DefinitionCollection`1" />. </returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.DefinitionCollection`1.RemoveAt(System.Int32)">
-            <param name="index">To be added.</param>
+            <param name="index">The location in this <see cref="T:Xamarin.Forms.DefinitionCollection`1" /> from which to remove an <see cref="I:Xamarin.Forms.IDefinition" /> instance.</param>
             <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.DefinitionCollection`1.System#Collections#IEnumerable#GetEnumerator">
-            <summary>To be added.</summary>
+            <summary>Gets an enumerator that can be used to iterate over the <see cref="I:Xamarin.Forms.IDefinition" /> instances in this <see cref="T:Xamarin.Forms.DefinitionCollection`1" />.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -2881,14 +2913,15 @@ var secondFetch = DependencyService.Get&lt;IDependencyTest&gt; (DependencyFetchT
             <param name="action">The Action to invoke </param>
             <summary>Invokes an Action on the device main (UI) thread.</summary>
             <remarks>
-                <para>
-                    <example lang="C#">This example show how to set the Text of Label on the main thread, e.g. in response to an async event.
-          <code lang="C#"><![CDATA[
+                <para>This example show how to set the Text of Label on the main thread, e.g. in response to an async event.
+          </para>
+                <example>
+                    <code lang="C#"><![CDATA[
 Device.BeginInvokeOnMainThread (() =&gt; {
   label.Text = "Async operation completed";
 });
-          ]]></code></example>
-                </para>
+          ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="P:Xamarin.Forms.Device.Idiom">
@@ -2903,12 +2936,13 @@ Device.BeginInvokeOnMainThread (() =&gt; {
             <param name="Default">(optional) The Action to execute if no Action was provided for the current OS.</param>
             <summary>Executes different Actions depending on the <see cref="T:Xamarin.QcuikUI.TargetOS" /> Forms is working on.</summary>
             <remarks>
-                <para>
-                    <example lang="C#">This example show how to change the font of a Label on a single OS.
-          <code lang="C#"><![CDATA[
+                <para>This example show how to change the font of a Label on a single OS.
+          </para>
+                <example>
+                    <code lang="C#"><![CDATA[
 Device.OnPlatform (iOS: () =&gt; label.Font = Font.OfSize ("HelveticaNeue-UltraLight", NamedSize.Large));
-          ]]></code></example>
-                </para>
+          ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="M:Xamarin.Forms.Device.OnPlatform``1(``0,``0,``0)">
@@ -2919,16 +2953,17 @@ Device.OnPlatform (iOS: () =&gt; label.Font = Font.OfSize ("HelveticaNeue-UltraL
             <summary>Returns different values depending on the <see cref="T:Xamarin.QcuikUI.TargetOS" /> Forms is working on.</summary>
             <returns>The value for the current OS.</returns>
             <remarks>
-                <para>
-                    <example lang="C#">This example show how to use different heights for a Button on different OS.
-          <code lang="C#"><![CDATA[
+                <para>This example show how to use different heights for a Button on different OS.
+          </para>
+                <example>
+                    <code lang="C#"><![CDATA[
 button.HeightRequest = Device.OnPlatform (20,30,30);
-          ]]></code></example>
-                </para>
+          ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="M:Xamarin.Forms.Device.OpenUri(System.Uri)">
-            <param name="uri">The <see cef="T:ystem.Uri" /> to open.</param>
+            <param name="uri">The <see cref="T:ystem.Uri" /> to open.</param>
             <summary>Request the device to open the Uri.</summary>
             <remarks>This often navigates out of the application.</remarks>
         </member>
@@ -2959,7 +2994,9 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
                             <see cref="P:Xamarin.Forms.Easing.BounceIn" />
                         </term>
                         <description>
-                            <img href="Easing.BounceIn.png" />
+                            <para>
+                                <img href="Easing.BounceIn.png" />
+                            </para>
                         </description>
                     </item>
                     <item>
@@ -2967,7 +3004,9 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
                             <see cref="P:Xamarin.Forms.Easing.BounceOut" />
                         </term>
                         <description>
-                            <img href="Easing.BounceOut.png" />
+                            <para>
+                                <img href="Easing.BounceOut.png" />
+                            </para>
                         </description>
                     </item>
                     <item>
@@ -2975,7 +3014,9 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
                             <see cref="P:Xamarin.Forms.Easing.CubicIn" />
                         </term>
                         <description>
-                            <img href="Easing.CubicIn.png" />
+                            <para>
+                                <img href="Easing.CubicIn.png" />
+                            </para>
                         </description>
                     </item>
                     <item>
@@ -2983,7 +3024,9 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
                             <see cref="P:Xamarin.Forms.Easing.CubicInOut" />
                         </term>
                         <description>
-                            <img href="Easing.CubicInOut.png" />
+                            <para>
+                                <img href="Easing.CubicInOut.png" />
+                            </para>
                         </description>
                     </item>
                     <item>
@@ -2991,7 +3034,9 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
                             <see cref="P:Xamarin.Forms.Easing.CubicOut" />
                         </term>
                         <description>
-                            <img href="Easing.CubicOut.png" />
+                            <para>
+                                <img href="Easing.CubicOut.png" />
+                            </para>
                         </description>
                     </item>
                     <item>
@@ -2999,7 +3044,9 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
                             <see cref="P:Xamarin.Forms.Easing.Linear" />
                         </term>
                         <description>
-                            <img href="Easing.Linear.png" />
+                            <para>
+                                <img href="Easing.Linear.png" />
+                            </para>
                         </description>
                     </item>
                     <item>
@@ -3007,7 +3054,9 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
                             <see cref="P:Xamarin.Forms.Easing.SinIn" />
                         </term>
                         <description>
-                            <img href="Easing.SinIn.gif" />
+                            <para>
+                                <img href="Easing.SinIn.gif" />
+                            </para>
                         </description>
                     </item>
                     <item>
@@ -3015,7 +3064,9 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
                             <see cref="P:Xamarin.Forms.Easing.SinInOut" />
                         </term>
                         <description>
-                            <img href="Easing.SinInOut.gif" />
+                            <para>
+                                <img href="Easing.SinInOut.gif" />
+                            </para>
                         </description>
                     </item>
                     <item>
@@ -3023,7 +3074,9 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
                             <see cref="P:Xamarin.Forms.Easing.SinOut" />
                         </term>
                         <description>
-                            <img href="Easing.SinOut.gif" />
+                            <para>
+                                <img href="Easing.SinOut.gif" />
+                            </para>
                         </description>
                     </item>
                     <item>
@@ -3031,7 +3084,9 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
                             <see cref="P:Xamarin.Forms.Easing.SpringIn" />
                         </term>
                         <description>
-                            <img href="Easing.SpringIn.png" />
+                            <para>
+                                <img href="Easing.SpringIn.png" />
+                            </para>
                         </description>
                     </item>
                     <item>
@@ -3039,7 +3094,9 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
                             <see cref="P:Xamarin.Forms.Easing.SpringOut" />
                         </term>
                         <description>
-                            <img href="Easing.SpringOut.png" />
+                            <para>
+                                <img href="Easing.SpringOut.png" />
+                            </para>
                         </description>
                     </item>
                 </list>
@@ -3078,7 +3135,9 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
         <member name="F:Xamarin.Forms.Easing.CubicInOut">
             <summary>Accelerates and decelerates. Often a natural-looking choice.</summary>
             <remarks>
-                <img href="Easing.CubicInOut.png" />
+                <para>
+                    <img href="Easing.CubicInOut.png" />
+                </para>
             </remarks>
         </member>
         <member name="F:Xamarin.Forms.Easing.CubicOut">
@@ -3163,15 +3222,16 @@ button.HeightRequest = Device.OnPlatform (20,30,30);
             <summary>Initializes a new instance of the Editor class.</summary>
             <remarks>
                 <para>
-                    <example language="C#">
               The following example creates a Editor with a Chat keyboard that fills the available space.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
 var editor = new Editor {
   VerticalOptions = LayoutOptions.FillAndExpand,
   Keyboard = Keyboard.Chat,
 };
-              ]]></code></example>
-                </para>
+              ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="P:Xamarin.Forms.Editor.Text">
@@ -3344,9 +3404,10 @@ var editor = new Editor {
             <summary>Initializes a new instance of the Entry class.</summary>
             <remarks>
                 <para>
-                    <example language="C#">
               The following example creates a new username and password set of entries.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
   View CreateLoginForm ()
   {
     var usernameEntry = new Entry {Placeholder = "Username"};
@@ -3362,8 +3423,8 @@ var editor = new Editor {
       }
     };
   }
-              ]]></code></example>
-                </para>
+              ]]></code>
+                </example>
                 <para>
                     <img href="Entry.TripleScreenShot.png" />
                 </para>
@@ -3677,15 +3738,16 @@ namespace FormsGallery
             <remarks>
                 <para>Frame have a default <see cref="P:Xamarin.Forms.Layout.Padding" /> of 20.</para>
                 <para>
-                    <example lang="C#">
           The following example shows how to construct a new Frame with an Outline color.
-          <code lang="C#"><![CDATA[
+          </para>
+                <example>
+                    <code lang="C#"><![CDATA[
 var frame = new Frame {
   Content = new Label { Text = "I'm Framous!" },
   OutlineColor = Color.Silver,
 };
-          ]]></code></example>
-                </para>
+          ]]></code>
+                </example>
                 <para>
                     <img href="Frame.TripleScreenShot.png" />
                 </para>
@@ -4239,11 +4301,12 @@ namespace FormsGallery
             <summary>Initializes a new instance of the Image class.</summary>
             <remarks>
                 <para>
-                    <example language="C#">
               The following example creates a new image from a file
-              <code lang="C#"><![CDATA[
-  var image = new Image { Source = "picture.png" };]]></code></example>
-                </para>
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
+  var image = new Image { Source = "picture.png" };]]></code>
+                </example>
             </remarks>
         </member>
         <member name="P:Xamarin.Forms.Image.Aspect">
@@ -4260,9 +4323,9 @@ namespace FormsGallery
             <value>A <see cref="T:System.Boolean" /> indicating if the image is loadin. Default is false.</value>
             <remarks>
                 <para>
-                    <example language="C#">
-              The following example illustrates running a <see cref="T:Xamarin.Forms.ActivityIndicator" /> to indicate that the image is loading:
-              <code lang="C#"><![CDATA[
+              The following example illustrates running a  <see cref="T:Xamarin.Forms.ActivityIndicator" /> to indicate that the image is loading:</para>
+                <example>
+                    <code lang="C#"><![CDATA[
 var image = new Image { 
   Source = new ImageLoader {
     Uri = new Uri ("http://eoimages.gsfc.nasa.gov/images/imagerecords/57000/57723/globe_west_2048.jpg"),
@@ -4274,8 +4337,8 @@ var image = new Image {
 
 var indicator = new ActivityIndicator {Color = new Color (.5),};
 indicator.SetBinding (ActivityIndicator.IsRunningProperty, "IsLoading");
-indicator.BindingContext = image;]]></code></example>
-                </para>
+indicator.BindingContext = image;]]></code>
+                </example>
             </remarks>
         </member>
         <member name="F:Xamarin.Forms.Image.IsLoadingProperty">
@@ -4525,7 +4588,7 @@ Debug.WriteLine (Object.ReferenceEquals (newPage, poppedPage)); //prints "true"
             <returns>An awaitable Task, indicating the PushModal completion.</returns>
             <remarks>
                 <para>The following example shows PushModalAsync and PopModalAsync usage:</para>
-                <example language="C#">
+                <example>
                     <code lang="C#"><![CDATA[
 var modalPage = new ContentPage ();
 await Navigation.PushModalAsync (modalPage);
@@ -4852,11 +4915,12 @@ void SetupView()
         <member name="T:Xamarin.Forms.KeyboardTypeConverter">
             <summary>A <see cref="T:Xamarin.Forms.TypeConverter" /> that converts a string into a <see cref="T:Xamarin.Forms.Keyboard" />.</summary>
             <remarks>
-                <para>
-                    <example language="XAML">The following XAML snippet illustrate a case where a KeyboardTypeConverter is used behind the scenes:<code lang="C#"><![CDATA[
+                <para>The following XAML snippet illustrates a case where a KeyboardTypeConverter is used behind the scenes:</para>
+                <example>
+                    <code lang="XAML"><![CDATA[
 &lt;Entry Keyboard="Keyboard.Telephone" /&gt; 
-    ]]></code></example>
-                </para>
+    ]]></code>
+                </example>
                 <para>The following shows some examples of <see cref="T:Xamarin.Forms.KeyboardTypeConverter" /> forms:</para>
                 <example>
                     <code lang="C#"><![CDATA[
@@ -5097,9 +5161,10 @@ namespace FormsGallery
             The padding is the space between the bounds of a layout and the bounding region into which its children should be arranged into.
           </para>
                 <para>
-                    <example lang="C#">
               The following example shows setting the padding of a Layout to inset its children.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
   var stackLayout = new StackLayout {
     Padding = new Thickness (10, 10, 10, 20),
     Children = {
@@ -5107,8 +5172,8 @@ namespace FormsGallery
       new Label {Text = "World"}
     }
   }
-              ]]></code></example>
-                </para>
+              ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="F:Xamarin.Forms.Layout.PaddingProperty">
@@ -5136,9 +5201,10 @@ namespace FormsGallery
                     <img href="Element.Hierarchy.png" />
                 </para>
                 <para>
-                    <example lang="C#">
           The following example shows adding and removing elements from a layout.
-          <code lang="C#"><![CDATA[
+          </para>
+                <example>
+                    <code lang="C#"><![CDATA[
   void UpdateItems (Layout&lt;View&gt; layout, IEnumerable newItems)
   {
     layout.Children.Clear ();
@@ -5146,8 +5212,8 @@ namespace FormsGallery
       layout.Children.Add (item);
     }
   }
-          ]]></code></example>
-                </para>
+          ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="C:Xamarin.Forms.Layout`1">
@@ -5162,9 +5228,10 @@ namespace FormsGallery
             The Children collection of a Layout contains all the children added throught the public add/remove interface. Internal children will not be exposed through this collection.
           </para>
                 <para>
-                    <example lang="C#">
               The following shows the creation of a layout, setting a property, and adding the children in the object initializer.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
   var stack = new StackLayout {
     Spacing = 20,
     Children = {
@@ -5172,8 +5239,8 @@ namespace FormsGallery
       new Button {Text = "Click Me!"}
     }
   };
-              ]]></code></example>
-                </para>
+              ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="M:Xamarin.Forms.Layout`1.OnAdded(T)">
@@ -5319,7 +5386,7 @@ namespace FormsGallery
             };
 
             // Define some data.
-            List<Person> people = new List<Person>
+            List&lt;Person&gt; people = new List&lt;Person&gt;
             {
                 new Person("Abigail", new DateTime(1975, 1, 15), Color.Aqua),
                 new Person("Bob", new DateTime(1976, 2, 20), Color.Black),
@@ -5358,7 +5425,7 @@ namespace FormsGallery
                 // Define template for displaying each item.
                 // (Argument of DataTemplate constructor is called for 
                 //      each item; it must return a Cell derivative.)
-                ItemTemplate = new DataTemplate(() =>
+                ItemTemplate = new DataTemplate(() =&gt;
                 {
                     // Create views with bindings for displaying each property.
                     Label nameLabel = new Label();
@@ -5909,49 +5976,6 @@ Assert.AreEqual(2, subscriber.IntProperty);
             <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
-        <member name="T:Xamarin.Forms.ModifierType">
-            <summary>Deprecated. This API element should not be used in application code.</summary>
-            <remarks>To be added.</remarks>
-        </member>
-        <member name="F:Xamarin.Forms.ModifierType.Button1Mask">
-            <summary>Deprecated. This API element should not be used in application code.</summary>
-        </member>
-        <member name="F:Xamarin.Forms.ModifierType.Button2Mask">
-            <summary>Deprecated. This API element should not be used in application code.</summary>
-        </member>
-        <member name="F:Xamarin.Forms.ModifierType.Button3Mask">
-            <summary>Deprecated. This API element should not be used in application code.</summary>
-        </member>
-        <member name="F:Xamarin.Forms.ModifierType.Button4Mask">
-            <summary>Deprecated. This API element should not be used in application code.</summary>
-        </member>
-        <member name="F:Xamarin.Forms.ModifierType.Button5Mask">
-            <summary>Deprecated. This API element should not be used in application code.</summary>
-        </member>
-        <member name="F:Xamarin.Forms.ModifierType.ControlMask">
-            <summary>Deprecated. This API element should not be used in application code.</summary>
-        </member>
-        <member name="F:Xamarin.Forms.ModifierType.LockMask">
-            <summary>Deprecated. This API element should not be used in application code.</summary>
-        </member>
-        <member name="F:Xamarin.Forms.ModifierType.Mod1Mask">
-            <summary>Deprecated. This API element should not be used in application code.</summary>
-        </member>
-        <member name="F:Xamarin.Forms.ModifierType.Mod2Mask">
-            <summary>Deprecated. This API element should not be used in application code.</summary>
-        </member>
-        <member name="F:Xamarin.Forms.ModifierType.Mod3Mask">
-            <summary>Deprecated. This API element should not be used in application code.</summary>
-        </member>
-        <member name="F:Xamarin.Forms.ModifierType.Mod4Mask">
-            <summary>Deprecated. This API element should not be used in application code.</summary>
-        </member>
-        <member name="F:Xamarin.Forms.ModifierType.Mod5Mask">
-            <summary>Deprecated. This API element should not be used in application code.</summary>
-        </member>
-        <member name="F:Xamarin.Forms.ModifierType.ShiftMask">
-            <summary>Deprecated. This API element should not be used in application code.</summary>
-        </member>
         <member name="T:Xamarin.Forms.MultiPage`1">
             <typeparam name="T">The particular subclass of Page the MultiPage services.</typeparam>
             <summary>A bindable, templatable base class for pages which contain multiple sub-pages.</summary>
@@ -5969,9 +5993,10 @@ Assert.AreEqual(2, subscriber.IntProperty);
             The Children collection of a MultiPage contains all the children added throught the public add/remove interface. Internal children will not be exposed through this collection.
           </para>
                 <para>
-                    <example>
               The following shows the creation of a multipage, setting a property, and adding the children in the object initializer.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
   Page pageOne = CreatePageOne ();
   Page pageTwo = CreatePageTwo ();
 
@@ -5982,8 +6007,8 @@ Assert.AreEqual(2, subscriber.IntProperty);
       pageTwo
     }
   };
-              ]]></code></example>
-                </para>
+              ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="M:Xamarin.Forms.MultiPage`1.CreateDefault(System.Object)">
@@ -6105,8 +6130,8 @@ Assert.AreEqual(2, subscriber.IntProperty);
             <summary>Gets the page that was removed or is newly visible.</summary>
             <value />
             <remarks>
-                <para>For <altmember cref="E:Xamarin.Forms.NavigationPage.Pushed" />, this is the <see cref="T:Xamarin.Forms.Page" /> that was removed. For <altmember cref="E:Xamarin.Forms.NavigationPage.Pushed" />
-					and <altmember cref="E:Xamarin.Forms.NavigationPage.PoppedToRoot" /> it is the newly visible page, the pushed page or the root respectively.</para>
+                <para>For <see cref="E:Xamarin.Forms.NavigationPage.Pushed" />, this is the <see cref="T:Xamarin.Forms.Page" /> that was removed. For <see cref="E:Xamarin.Forms.NavigationPage.Pushed" />
+					and <see cref="E:Xamarin.Forms.NavigationPage.PoppedToRoot" /> it is the newly visible page, the pushed page or the root respectively.</para>
             </remarks>
         </member>
         <member name="T:Xamarin.Forms.NavigationPage">
@@ -6323,6 +6348,31 @@ public class MyPage : NavigationPage
         <member name="F:Xamarin.Forms.NavigationPage.TitleIconProperty">
             <summary>Indicates the <see cref="M:Xamarin.Forms.NavigationPage.SetTitleIcon" />/<see cref="M:Xamarin.Forms.NavigationPage.GetTitleIcon" /> property.</summary>
             <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.OnIdiom`1">
+            <typeparam name="T">To be added.</typeparam>
+            <summary>Provides idiom-specific implementation of T for the current TargetIdiom.</summary>
+            <remarks />
+        </member>
+        <member name="C:Xamarin.Forms.OnIdiom`1">
+            <summary>Initializes a new instance of OnIdiom</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Forms.OnIdiom`1.op_Implicit(`0Xamarin`0.`0Forms`0.`0OnIdiom`0{`0T`0})~`0T`0">
+            <param name="onIdiom">To be added.</param>
+            <summary>Implicitly converts OnIdiom to T, depending on Device.Idiom.</summary>
+            <returns>The value of the Phone or Tablet property, depending on the current Device.Idiom.</returns>
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Forms.OnIdiom`1.Phone">
+            <summary>Gets or sets the value applied on Phone-like devices.</summary>
+            <value>A T.</value>
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Forms.OnIdiom`1.Tablet">
+            <summary>Gets or sets the value applied on Tablet-like devices.</summary>
+            <value>A T.</value>
+            <remarks />
         </member>
         <member name="T:Xamarin.Forms.OnPlatform`1">
             <typeparam name="T">To be added.</typeparam>
@@ -6601,10 +6651,9 @@ namespace GLDemo
             <summary>A <see cref="T:Xamarin.Forms.View" /> control for picking an element in a list.</summary>
             <remarks>
                 <para>The visual representation of a Picker is similar to a <see cref="T:Xamarin.Forms.Entry" />, but a picker control appears in place of a keyboard.</para>
-                <para>
-                    <para>The following example shows the creation of a Picker.</para>
-                    <example>
-                        <code lang="C#"><![CDATA[using System;
+                <para>The following example shows the creation of a Picker.</para>
+                <example>
+                    <code lang="C#"><![CDATA[using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
 
@@ -6685,8 +6734,7 @@ namespace FormsGallery
     }
 }
 ]]></code>
-                    </example>
-                </para>
+                </example>
                 <para>
                     <img href="Picker.TripleScreenShot.png" />
                 </para>
@@ -6750,7 +6798,7 @@ namespace FormsGallery
             <returns>
                 <see langword="true" /> if the X and Y values are equal to those in <paramref name="o" />. Returns <see langword="false" /> if <paramref name="o" /> is not a <see cref="T:Xamarin.Forms.Point" />.</returns>
             <remarks>
-                <para>The <see cref="P:Xamarin.Forms.Point.X" /> and <see cref="P:Xamarin.Forms.Point.Y" /> values of the <see cref="T:Xamarin.Forms.Point" /> are stored as <langword see="double" />s. Developers should be aware of the precision limits and issues that can arise when comparing floating-point values. In some circumstances, developers should consider the possibility of measuring approximate equality using the (considerably slower) <see cref="M:Xamarin.Forms.Point.Distance" /> method.</para>
+                <para>The <see cref="P:Xamarin.Forms.Point.X" /> and <see cref="P:Xamarin.Forms.Point.Y" /> values of the <see cref="T:Xamarin.Forms.Point" /> are stored as <see langword="double" />s. Developers should be aware of the precision limits and issues that can arise when comparing floating-point values. In some circumstances, developers should consider the possibility of measuring approximate equality using the (considerably slower) <see cref="M:Xamarin.Forms.Point.Distance" /> method.</para>
             </remarks>
         </member>
         <member name="M:Xamarin.Forms.Point.GetHashCode">
@@ -6855,8 +6903,9 @@ namespace FormsGallery
         <member name="T:Xamarin.Forms.ProgressBar">
             <summary>A <see cref="T:Xamarin.Forms.View" /> control indicating a progress.</summary>
             <remarks>
-                <para>
-                    <example lang="C#">The following example shows the usage of a ProgressBar.<code lang="C#"><![CDATA[
+                <para>The following example shows the usage of a ProgressBar.</para>
+                <example>
+                    <code lang="C#"><![CDATA[
 
 //initial progress is 20%
 var progressBar = new ProgressBar {
@@ -6867,8 +6916,8 @@ var progressBar = new ProgressBar {
 await progressBar.ProgressTo (.8, 250, Easing.Linear);
 
 Debug.WriteLine ("Animation completed");
-]]></code></example>
-                </para>
+]]></code>
+                </example>
                 <para>
                     <img href="ProgressBar.TripleScreenShot.png" />
                 </para>
@@ -6918,7 +6967,7 @@ Debug.WriteLine ("Animation completed");
         <member name="T:Xamarin.Forms.Rectangle">
             <summary>Struct defining a rectangle, using doubles.</summary>
             <remarks>
-                <para>Application developers should be aware of the limits of floating-point representations, specifically the possibility of incorrect comparisons and equality checks for values with small differences. David Goldberg's paper <a href="http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html">What Every Computer Scientist Should Know About Floating-Point Arithmetic</a> describes the issues excellently. </para>
+                <para>Application developers should be aware of the limits of floating-point representations, specifically the possibility of incorrect comparisons and equality checks for values with small differences. David Goldberg's paper <format type="text/html"><a href="http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html">What Every Computer Scientist Should Know About Floating-Point Arithmetic</a></format> describes the issues excellently. </para>
             </remarks>
         </member>
         <member name="C:Xamarin.Forms.Rectangle(Xamarin.Forms.Point,Xamarin.Forms.Size)">
@@ -7008,7 +7057,7 @@ Debug.WriteLine ("Animation completed");
             <summary>Creates a <see cref="T:Xamarin.Forms.Rectangle" /> whose borders are inflated in every direction.</summary>
             <returns>A new <see cref="T:Xamarin.Forms.Rectangle" /> whose <see cref="P:Xamarin.Forms.Rectangle.Left" /> and <see cref="P:Xamarin.Forms.Rectangle.Right" /> are inflated by <paramref name="sz" />'s <see cref="P:Xamarin.Forms.Size.Width" /> and whose <see cref="P:Xamarin.Forms.Rectangle.Top" /> and <see cref="P:Xamarin.Forms.Rectangle.Bottom" /> are inflated by <paramref name="sz" />'s <see cref="P:Xamarin.Forms.Size.Height" />.</returns>
             <remarks>
-                <para>Application developers should note that since the inflation occurs in every direction, the returned <see cref="T:Xamarin.Forms.Rectangle" /> is larger in each dimension by twice <paramef name="sz" />.</para>
+                <para>Application developers should note that since the inflation occurs in every direction, the returned <see cref="T:Xamarin.Forms.Rectangle" /> is larger in each dimension by twice <paramref name="sz" />.</para>
                 <example>
                     <code lang="C#"><![CDATA[
 var rect = new Rectangle (10, 10, 5, 5);
@@ -7024,7 +7073,7 @@ Assert.AreEqual (larger, new Rectangle (9, 9, 7, 7));
             <summary>Creates a <see cref="T:Xamarin.Forms.Rectangle" /> whose borders are inflated in every direction.</summary>
             <returns>A new <see cref="T:Xamarin.Forms.Rectangle" /> whose <see cref="P:Xamarin.Forms.Rectangle.Left" /> and <see cref="P:Xamarin.Forms.Rectangle.Right" /> are inflated by <paramref name="width" /> and whose <see cref="P:Xamarin.Forms.Rectangle.Top" /> and <see cref="P:Xamarin.Forms.Rectangle.Bottom" /> are inflated by <paramref name="height" />.</returns>
             <remarks>
-                <para>Application developers should note that since the inflation occurs in every direction, the returned <see cref="T:Xamarin.Forms.Rectangle" /> is larger in X by twice <paramef name="width" /> and larger in Y by twice <paramref name="height" />.</para>
+                <para>Application developers should note that since the inflation occurs in every direction, the returned <see cref="T:Xamarin.Forms.Rectangle" /> is larger in X by twice <paramref name="width" /> and larger in Y by twice <paramref name="height" />.</para>
                 <example>
                     <code lang="C#"><![CDATA[
 var rect = new Rectangle (10, 10, 5, 5);
@@ -7533,7 +7582,7 @@ namespace FormsGallery
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.ResourceDictionary.Keys">
-            <summary>The collection of identifier <langword see="string" />s that are keys in the <see cref="T:Xamarin.Forms.ResourceDictionary" />.</summary>
+            <summary>The collection of identifier <see langword="string" />s that are keys in the <see cref="T:Xamarin.Forms.ResourceDictionary" />.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
@@ -7557,7 +7606,7 @@ namespace FormsGallery
         </member>
         <member name="M:Xamarin.Forms.ResourceDictionary.TryGetValue(System.String,System.Object@)">
             <param name="key">The identifier of the object to be retrieved.</param>
-            <param name="value">An <langword see="out" /> reference to the object being retrieved, or it's default value.</param>
+            <param name="value">An <see langword="out" /> reference to the object being retrieved, or it's default value.</param>
             <summary>Retrieves the object specified by <paramref name="key" /> or, if not present, the default value of <see langword="null" />.</summary>
             <returns>The object specified by <paramref name="key" /> or, if not present, the default value of <see langword="null" />.</returns>
             <remarks>To be added.</remarks>
@@ -7786,51 +7835,51 @@ namespace FormsGallery
             </remarks>
         </member>
         <member name="C:Xamarin.Forms.SearchBar">
-            <summary>To be added.</summary>
+            <summary>Creates a new <see cref="T:Xamarin.Forms.SearchBar" />.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.SearchBar.Placeholder">
-            <summary>To be added.</summary>
-            <value>To be added.</value>
+            <summary>Gets or sets the text that is displayed when the <see cref="T:Xamarin.Forms.SearchBar" /> is empty.</summary>
+            <value>The text that is displayed when the <see cref="T:Xamarin.Forms.SearchBar" /> is empty.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="F:Xamarin.Forms.SearchBar.PlaceholderProperty">
-            <summary>To be added.</summary>
+            <summary>Backing store for the <see cref="P:Xamarin.Forms.SearchBar.Placeholder" /> property.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="E:Xamarin.Forms.SearchBar.SearchButtonPressed">
-            <summary>To be added.</summary>
+            <summary>Event that is raised when the user presses the Search button.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.SearchBar.SearchCommand">
-            <summary>To be added.</summary>
-            <value>To be added.</value>
+            <summary>Gets or sets the command that is run when the user presses Search button.</summary>
+            <value>The command that is run when the user presses Search button.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.SearchBar.SearchCommandParameter">
-            <summary>To be added.</summary>
-            <value>To be added.</value>
+            <summary>Gets or sets the parameter that is sent to the <see cref="P:Xamarin.Forms.SearchBar.SearchCommand" />.</summary>
+            <value>The parameter that is sent to the <see cref="P:Xamarin.Forms.SearchBar.SearchCommand" />.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="F:Xamarin.Forms.SearchBar.SearchCommandParameterProperty">
-            <summary>To be added.</summary>
+            <summary>Backing store for the <see cref="P:Xamarin.Forms.SearchBar.SearchCommandParameter" /> property.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="F:Xamarin.Forms.SearchBar.SearchCommandProperty">
-            <summary>To be added.</summary>
+            <summary>Backing store for the <see cref="P:Xamarin.Forms.SearchBar.SearchCommand" /> property.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.SearchBar.Text">
-            <summary>To be added.</summary>
-            <value>To be added.</value>
+            <summary>Gets or sets the text that is displayed in the <see cref="T:Xamarin.Forms.SearchBar" />.</summary>
+            <value>The text that is displayed in the <see cref="T:Xamarin.Forms.SearchBar" />.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="E:Xamarin.Forms.SearchBar.TextChanged">
-            <summary>To be added.</summary>
+            <summary>Event that is raised when the <see cref="P:Xamarin.Forms.SearchBar.Text" /> property is changed. For example, this event is raised as the user edits the text in the SearchBar.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="F:Xamarin.Forms.SearchBar.TextProperty">
-            <summary>To be added.</summary>
+            <summary>Backing store for the <see cref="P:Xamarin.Forms.SearchBar.Text" /> property.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.SelectedItemChangedEventArgs">
@@ -7850,7 +7899,7 @@ namespace FormsGallery
         <member name="T:Xamarin.Forms.Size">
             <summary>Struct defining height and width as a pair of doubles.</summary>
             <remarks>
-                <para>Application developers should be aware of the limits of floating-point representations, specifically the possibility of incorrect comparisons and equality checks for values with small differences. David Goldberg's paper <a href="http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html">What Every Computer Scientist Should Know About Floating-Point Arithmetic</a> describes the issues excellently. </para>
+                <para>Application developers should be aware of the limits of floating-point representations, specifically the possibility of incorrect comparisons and equality checks for values with small differences. David Goldberg's paper <format type="text/html"><a href="http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html">What Every Computer Scientist Should Know About Floating-Point Arithmetic</a></format> describes the issues excellently. </para>
             </remarks>
         </member>
         <member name="C:Xamarin.Forms.Size(System.Double,System.Double)">
@@ -7903,7 +7952,7 @@ namespace FormsGallery
             <returns>
                 <see langword="true" /> if <paramref name="s1" /> and <paramref name="s2" /> have equal values for <see cref="P:Xamarin.Forms.Size.Height" /> and <see cref="P:Xamarin.Forms.Size.Width" />.</returns>
             <remarks>
-                <para>Application developers should be aware that <see cref="P:Xamarin.Forms.Size.Width" /> and <see cref="P:Xamarin.Forms.Size.Height" /> are stored internally as <langword see="double" />s. Values with small differences may compare incorrectly due to internal rounding limitations.</para>
+                <para>Application developers should be aware that <see cref="P:Xamarin.Forms.Size.Width" /> and <see cref="P:Xamarin.Forms.Size.Height" /> are stored internally as <see langword="double" />s. Values with small differences may compare incorrectly due to internal rounding limitations.</para>
             </remarks>
         </member>
         <member name="M:Xamarin.Forms.Size.op_Explicit(Xamarin.Forms.Size)~Xamarin.Forms.Point">
@@ -7917,7 +7966,7 @@ namespace FormsGallery
             <returns>
                 <see langword="true" /> if <paramref name="s1" /> and <paramref name="s2" /> have unequal values for either <see cref="P:Xamarin.Forms.Size.Height" /> or <see cref="P:Xamarin.Forms.Size.Width" />.</returns>
             <remarks>
-                <para>Application developers should be aware that <see cref="P:Xamarin.Forms.Size.Width" /> and <see cref="P:Xamarin.Forms.Size.Height" /> are stored internally as <langword see="double" />s. Values with small differences may compare incorrectly due to internal rounding limitations.</para>
+                <para>Application developers should be aware that <see cref="P:Xamarin.Forms.Size.Width" /> and <see cref="P:Xamarin.Forms.Size.Height" /> are stored internally as <see langword="double" />s. Values with small differences may compare incorrectly due to internal rounding limitations.</para>
             </remarks>
         </member>
         <member name="M:Xamarin.Forms.Size.op_Multiply(Xamarin.Forms.Size,System.Double)">
@@ -8205,9 +8254,10 @@ namespace FormsGallery
             <summary>Initializes a new instance of the StackLayout class.</summary>
             <remarks>
                 <para>
-                    <example lang="C#">
               The following example shows the initialization of a new StackLayout and setting its orientation and children.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
 var stackLayout = new StackLayout {
   Orientation = StackOrientation.Horizontal,
   Children = {
@@ -8216,8 +8266,8 @@ var stackLayout = new StackLayout {
     thirdChild
   }
 };
-              ]]></code></example>
-                </para>
+              ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="M:Xamarin.Forms.StackLayout.LayoutChildren(System.Double,System.Double,System.Double,System.Double)">
@@ -8252,14 +8302,15 @@ var stackLayout = new StackLayout {
             Setting this value triggers a layout cycle if the StackLayout is already in a parent Layout.
           </para>
                 <para>
-                    <example lang="C#">
               The following example sets the Spacing on construction of a StackLayout.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
 var stackLayout = new StackLayout {
   Spacing = 10
 };
-              ]]></code></example>
-                </para>
+              ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="F:Xamarin.Forms.StackLayout.SpacingProperty">
@@ -8711,7 +8762,7 @@ namespace FormsGallery
         <member name="T:Xamarin.Forms.TableSectionBase`1">
             <typeparam name="T">To be added.</typeparam>
             <summary>
-            Table section contain instances of type T that are rendered by Xamarin.Forms.</summary>
+            Table section that contains instances of type T that are rendered by Xamarin.Forms.</summary>
             <remarks>
                 <para>
             Sections are used to group cells in the screen and they are the
@@ -8735,97 +8786,100 @@ namespace FormsGallery
         </member>
         <member name="C:Xamarin.Forms.TableSectionBase`1">
             <summary>
-            Constructs a Section without an empty header.
+            Constructs a new <see cref="T:Xamarin.Forms.TableSection`1" /> instance with an empty title.
             </summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="C:Xamarin.Forms.TableSectionBase`1(System.String)">
             <param name="title">To be added.</param>
             <summary>
-            Constructs a Section with the specified header.
+            Constructs a new <see cref="T:Xamarin.Forms.TableSection`1" /> instance with the specified <paramref name="title" />.
             </summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.TableSectionBase`1.Add(System.Collections.Generic.IEnumerable{T})">
-            <param name="items">To be added.</param>
-            <summary>To be added.</summary>
+            <param name="items">The items to add.</param>
+            <summary>Adds a list of items to this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.TableSectionBase`1.Add(T)">
-            <param name="item">To be added.</param>
-            <summary>To be added.</summary>
+            <param name="item">The item to add.</param>
+            <summary>Adds an item to this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.TableSectionBase`1.Clear">
-            <summary>To be added.</summary>
+            <summary>Removes all items in this <see cref="T:Xamarin.Forms.TableSectionBase`1" />.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="E:Xamarin.Forms.TableSectionBase`1.CollectionChanged">
-            <summary>To be added.</summary>
+            <summary>Event that is raised when one or more items is added to or removed from this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.TableSectionBase`1.Contains(T)">
-            <param name="item">To be added.</param>
-            <summary>To be added.</summary>
-            <returns>To be added.</returns>
+            <param name="item">The object for which to determine whether or not this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object has a reference.</param>
+            <summary>Returns a Boolean value that indicates whether or not this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> has a reference to a particular object.</summary>
+            <returns>
+                <see langword="true" /> if this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object contains a reference to <paramref name="item" />. Otherwise, <see langword="false" />.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.TableSectionBase`1.CopyTo(T[],System.Int32)">
             <param name="array">To be added.</param>
             <param name="arrayIndex">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Copies the elements of the current collection to an <see cref="T:System.Array" />, starting at the specified index.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.TableSectionBase`1.Count">
-            <summary>To be added.</summary>
-            <value>To be added.</value>
+            <summary>Gets the number of items in this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object.</summary>
+            <value>The number of items in this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.TableSectionBase`1.GetEnumerator">
-            <summary>To be added.</summary>
+            <summary>Returns an enumerator that iterates through the items in this  <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.TableSectionBase`1.IndexOf(T)">
-            <param name="item">To be added.</param>
-            <summary>To be added.</summary>
-            <returns>To be added.</returns>
+            <param name="item">The instance for which to find its index.</param>
+            <summary>Returns the index of the first occurrence of <paramref name="item" /> in this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object.</summary>
+            <returns>The index of the first occurrence of <paramref name="item" /> in this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.TableSectionBase`1.Insert(System.Int32,T)">
-            <param name="index">To be added.</param>
-            <param name="item">To be added.</param>
-            <summary>To be added.</summary>
+            <param name="index">The position at which to insert <paramref name="item" />.</param>
+            <param name="item">The item to insert.</param>
+            <summary>Inserts an item into this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object at the specified position.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.TableSectionBase`1.Item(System.Int32)">
-            <param name="index">To be added.</param>
-            <summary>To be added.</summary>
+            <param name="index">The location of the item to return.</param>
+            <summary>Returns the item that is stored at the location in this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object that is specified by <paramref name="index" />.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.TableSectionBase`1.OnBindingContextChanged">
-            <summary>To be added.</summary>
+            <summary>Calls the <see cref="M:Xamarin.Forms.BindableObject.SetInheritedBindingContext" /> method, passing the new binding context, on each of the items in this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.TableSectionBase`1.Remove(T)">
             <param name="item">To be added.</param>
-            <summary>To be added.</summary>
-            <returns>To be added.</returns>
+            <summary>Removes a specified item from this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object.</summary>
+            <returns>
+                <see langword="true" />, if item was removed from the current collection; <see langword="false" /> if item was not found in the current collection..</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.TableSectionBase`1.RemoveAt(System.Int32)">
-            <param name="index">To be added.</param>
-            <summary>To be added.</summary>
+            <param name="index">The position in this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object from which to remove an item.</param>
+            <summary>Removes a specified item from this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object at the position that is specified by <paramref name="index" />.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.TableSectionBase`1.System#Collections#Generic#ICollection{T}#IsReadOnly">
-            <summary>To be added.</summary>
-            <value>To be added.</value>
+            <summary>Returns <see langword="false" />; The collection of objects in this can be changed.</summary>
+            <value>
+                <see langword="false" />; The collection of objects in this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object can be changed.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.TableSectionBase`1.System#Collections#IEnumerable#GetEnumerator">
-            <summary>To be added.</summary>
+            <summary>Returns an enumerator that iterates through the collection of objects in this <see cref="T:Xamarin.Forms.TableSectionBase`1" /> object.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -8934,6 +8988,24 @@ return new ContentPage {
             <summary>Initializes a new instance of a TapGestureRecognizer object with a callback.</summary>
             <remarks />
         </member>
+        <member name="P:Xamarin.Forms.TapGestureRecognizer.Command">
+            <summary>The Command to invoke when the gesture has been triggered by the user. This is a bindable property.</summary>
+            <value>To be added.</value>
+            <remarks>The object passed to the Command will be the contents of <see cref="P:Xamarin.Forms.TapGestureRecognizer.CommandParameter" /></remarks>
+        </member>
+        <member name="P:Xamarin.Forms.TapGestureRecognizer.CommandParameter">
+            <summary>An object to be passed to the TappedCallback. This is a bindable property.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:Xamarin.Forms.TapGestureRecognizer.CommandParameterProperty">
+            <summary>Identifies the CommandParameter bindable property.</summary>
+            <remarks />
+        </member>
+        <member name="F:Xamarin.Forms.TapGestureRecognizer.CommandProperty">
+            <summary>Identifies the Command bindable property.</summary>
+            <remarks />
+        </member>
         <member name="P:Xamarin.Forms.TapGestureRecognizer.NumberOfTapsRequired">
             <summary>The number of taps required to trigger the callback. This is a bindable property.</summary>
             <value>The number of taps to recognize. The default value is 1.</value>
@@ -8941,6 +9013,10 @@ return new ContentPage {
         </member>
         <member name="F:Xamarin.Forms.TapGestureRecognizer.NumberOfTapsRequiredProperty">
             <summary>Identifies the NumberOfTapsRequired bindable property.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:Xamarin.Forms.TapGestureRecognizer.Tapped">
+            <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.TapGestureRecognizer.TappedCallback">
@@ -8960,6 +9036,20 @@ return new ContentPage {
         <member name="F:Xamarin.Forms.TapGestureRecognizer.TappedCallbackProperty">
             <summary>Identifies the TappedCallback bindable property.</summary>
             <remarks />
+        </member>
+        <member name="T:Xamarin.Forms.TappedEventArgs">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Forms.TappedEventArgs(System.Object)">
+            <param name="parameter">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.TappedEventArgs.Parameter">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.TargetIdiom">
             <summary>Indicates the type of device Forms is working on.</summary>
@@ -9282,12 +9372,13 @@ namespace FormsGallery
             <remarks>
                 <para>The visual representation of a TimePicker is very similar to the one of <see cref="T:Xamarin.Forms.Entry" />, except that a special control for picking a time appears in place of a keyboard.</para>
                 <para>
-                    <example lang="C#">
     The following example shows declaration of a TimePicker with a default time set.
-    <code lang="C#"><![CDATA[
+    </para>
+                <example>
+                    <code lang="C#"><![CDATA[
 var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
-    ]]></code></example>
-                </para>
+    ]]></code>
+                </example>
                 <para>
                     <img href="TimePicker.TripleScreenShot.png" />
                 </para>
@@ -9601,17 +9692,18 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             Adding items to this collection will associate gesture events with this element. This is not nessesary for elements which natively support input, such as a Button.
           </para>
                 <para>
-                    <example lang="C#">
               This example creates a tap gesture recognizer and associates it with an image. When the image is double tapped, it will become semi-transparent.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
   var image = new Image {Source = "image.png"};
   var gestureRecognizer = new TapGestureRecognizer {
     TappedCallback = o =&gt; image.Opacity = 0.5,
     NumberOfTapsRequired = 2
   };
   image.GestureRecognizers.Add (gestureRecognizer);
-              ]]></code></example>
-                </para>
+              ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="P:Xamarin.Forms.View.HorizontalOptions">
@@ -9622,9 +9714,10 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             Assigning the HorizontalOptions modifies how the element is laid out when there is excess space available along the X axis from the parent layout. Additionally it specifies if the element should consume leftover space in the X axis from the parent layout. If multiple children of a layout are set to expand, the extra space is distributed proportionally.
           </para>
                 <para>
-                    <example lang="C#">
               This example creates four views and adds them to a stack, each laying out in a different manner.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
   private View CreateButtons ()
   {
     var button1 = new Button {Text = "LeftAligned", HorizontalOptions=LayoutOptions.Start};
@@ -9643,8 +9736,8 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
 
     return stack;
   }
-              ]]></code></example>
-                </para>
+              ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="F:Xamarin.Forms.View.HorizontalOptionsProperty">
@@ -9665,9 +9758,10 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             Assigning the VerticalOptions modifies how the element is laid out when there is excess space available along the Y axis from the parent layout. Additionally it specifies if the element should consume leftover space in the Y axis from the parent layout. If multiple children of a layout are set to expand, the extra space is distributed proportionally.
           </para>
                 <para>
-                    <example lang="C#">
               This example creates four views and adds them to a stack, each laying out in a different manner.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
   private View CreateButtons ()
   {
     var button1 = new Button {Text = "TopAligned", VerticalOptions=LayoutOptions.Start};
@@ -9687,8 +9781,8 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
 
     return stack;
   }
-              ]]></code></example>
-                </para>
+              ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="F:Xamarin.Forms.View.VerticalOptionsProperty">
@@ -9714,7 +9808,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
         </member>
         <member name="M:Xamarin.Forms.ViewExtensions.CancelAnimations(Xamarin.Forms.VisualElement)">
             <param name="view">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Aborts the MoveTo, RotateTo, ScaleTo, FadeTo, and SizeTo animations on <paramref name="view" /> element.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.ViewExtensions.FadeTo(Xamarin.Forms.VisualElement,System.Double,System.UInt32,Xamarin.Forms.Easing)">
@@ -9722,7 +9816,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             <param name="opacity">To be added.</param>
             <param name="length">To be added.</param>
             <param name="easing">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Returns a task that performs the fade that is described by the <paramref name="opacity" />, <paramref name="length" />, and <paramref name="easing" /> parameters.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -9731,7 +9825,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             <param name="bounds">To be added.</param>
             <param name="length">To be added.</param>
             <param name="easing">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Returns a task that eases the bounds of the <see cref="T:Xamarin.Forms.VisualElement" /> that is specified by the <paramref name="view" /> to the rectangle that is specified by the <paramref name="bounds" /> parameter.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -9740,7 +9834,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             <param name="drotation">To be added.</param>
             <param name="length">To be added.</param>
             <param name="easing">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Rotates the <see cref="T:Xamarin.Forms.VisualElement" /> that is specified by <paramref name="view" /> from its current rotation by <paramref name="drotation" />.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -9749,7 +9843,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             <param name="dscale">To be added.</param>
             <param name="length">To be added.</param>
             <param name="easing">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Returns a task that scales the <see cref="T:Xamarin.Forms.VisualElement" /> that is specified by <paramref name="view" /> from its current scale to <paramref name="dscale" />.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -9758,7 +9852,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             <param name="rotation">To be added.</param>
             <param name="length">To be added.</param>
             <param name="easing">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Returns a task that performs the rotation that is described by the <paramref name="rotation" />, <paramref name="length" />, and <paramref name="easing" /> parameters..</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -9767,7 +9861,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             <param name="rotation">To be added.</param>
             <param name="length">To be added.</param>
             <param name="easing">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Returns a task that skews the Y axis by <paramref name="opacity" />, taking time <paramref name="length" /> and using <paramref name="easing" />.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -9776,7 +9870,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             <param name="rotation">To be added.</param>
             <param name="length">To be added.</param>
             <param name="easing">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Returns a task that skews the X axis by <paramref name="opacity" />, taking time <paramref name="length" /> and using <paramref name="easing" />.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -9785,7 +9879,7 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             <param name="scale">To be added.</param>
             <param name="length">To be added.</param>
             <param name="easing">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>Returns a task that scales the <see cref="T:Xamarin.Forms.VisualElement" /> that is specified by <paramref name="view" /> to the absolute scale factor <paramref name="scale" />.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -9914,9 +10008,10 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             Elements that are not enabled do not participate in hit detection, and therefore will not receive focus or emit input events.
           </para>
                 <para>
-                    <example lang="C#">
               The following example shows a handler on a button which will then set IsEnabled to false on another button.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
   public partial class ButtonDisableExample {
     void BuildButtons ()
     {
@@ -9925,8 +10020,8 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
       button1.Activated += (o, e) =&gt; button2.IsEnabled = false;
     }
   }
-              ]]></code></example>
-                </para>
+              ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="F:Xamarin.Forms.VisualElement.IsEnabledProperty">
@@ -9942,9 +10037,10 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             Applications may have multiple focuses depending on the implementation of the underlying toolkit. Menus and modals in particular may leave multiple items with focus.
           </para>
                 <para>
-                    <example lang="C#">
               The following example shows conditionally setting a background color based on the focus state.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
   void UpdateBackground ()
   {
     if (myElement.IsFocused)
@@ -9952,8 +10048,8 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
     else
       myElement.BackgroundColor = Color.Blue;
   }
-              ]]></code></example>
-                </para>
+              ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="P:Xamarin.Forms.VisualElement.IsVisible">
@@ -9963,9 +10059,10 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             <remarks>
                 <para>Setting IsVisible to false will remove the element from the visual tree. The element will no longer take up space in layouts or be eligle to receive any kind of input event.</para>
                 <para>
-                    <example lang="C#">
               The following example shows a stack where the middle element is toggled when a button is activated.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
   partial class LabelToggle {
     Label label;
 
@@ -9991,8 +10088,8 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
       label.IsVisible = !label.IsVisible;
     }
   }
-              ]]></code></example>
-                </para>
+              ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="F:Xamarin.Forms.VisualElement.IsVisibleProperty">
@@ -10016,9 +10113,10 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             MinimumHeightRequest is used to override the results of a call to <see cref="M:Xamarin.Forms.VisualElement.GetSizeRequest (double, double)" /> by setting the minimum height property. This causes overflow handling to shrink this element to its minimum height before elements who do not have a minimum size set.
           </para>
                 <para>
-                    <example lang="C#">
               The following example sets the MinimumHeightRequest to enable an image to shrink below it's normal size.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
   void Build (string veryLongString)
   {
     var label = new Label {Text = veryLongString};
@@ -10032,8 +10130,8 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
       }
     };
   }
-              ]]></code></example>
-                </para>
+              ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="P:Xamarin.Forms.VisualElement.MinimumWidthRequest">
@@ -10044,9 +10142,10 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             MinimumWidthRequest is used to override the results of a call to <see cref="M:Xamarin.Forms.VisualElement.GetSizeRequest (double, double)" /> by setting the minimum width property. This causes overflow handling to shrink this element to its minimum width before elements who do not have a minimum size set.
           </para>
                 <para>
-                    <example lang="C#">
               The following example sets the MinimumWidthRequest to enable an image to shrink below it's normal size.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
   void Build (string veryLongString)
   {
     var label = new Label {Text = veryLongString};
@@ -10061,8 +10160,8 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
       }
     };
   }
-              ]]></code></example>
-                </para>
+              ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="P:Xamarin.Forms.VisualElement.Navigation">
@@ -10073,8 +10172,9 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             Use the Navigation property to perform navigation from any element. If the element has not yet been added to a tree which contains a navigation implementor, the actions are queued up until it is.
           </para>
                 <para>
-            The following example navigates to a new page created in the callback of a buttons <see cref="E:Xamarin.Forms.VisualElement.Activated" /> event.
-            <example lang="C#"><code lang="C#"><![CDATA[
+            The following example navigates to a new page created in the callback of a buttons <see cref="E:Xamarin.Forms.VisualElement.Activated" /> event.</para>
+                <example>
+                    <code lang="C#"><![CDATA[
   partial class NavigationTest {
     void BuildContent 
     {
@@ -10092,7 +10192,8 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
       button.Navigation.Push (newPage);
     }
   }
-              ]]></code></example></para>
+              ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="F:Xamarin.Forms.VisualElement.NavigationProperty">
@@ -10128,9 +10229,10 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
             The opacity value has no effect unless IsVisible is <see langword="true" />. Opacity is inherited down the element hierarchy. If a parent has 0.5 opacity, and a child has 0.5 opacity, the child will render with an effective 0.25 opacity. Setting opacity to 0 has undefined behavior with input elements.
           </para>
                 <para>
-                    <example lang="C#">
               The following example sets the opacity of a layout to 0.5 and the opacity of one of its children to 0.5, making the child 25% opaque.
-              <code lang="C#"><![CDATA[
+              </para>
+                <example>
+                    <code lang="C#"><![CDATA[
   StackLayout stack = new StackLayout ();
   Button button1 = new Button {Text="A Button"};
   Button button2 = new Button {Text="Another Button"};
@@ -10143,8 +10245,8 @@ var beeroclock = new TimePicker () { Time = new TimeSpan (17,0,0) };
 
   // button1 will become 25% opaque while the stack and button2 remane 50% opaque
   button1.Opacity = 0.5;
-              ]]></code></example>
-                </para>
+              ]]></code>
+                </example>
             </remarks>
         </member>
         <member name="F:Xamarin.Forms.VisualElement.OpacityProperty">

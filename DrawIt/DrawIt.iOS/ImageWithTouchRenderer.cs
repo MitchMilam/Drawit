@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms.Platform.iOS;
+﻿using System.Drawing;
+using Xamarin.Forms.Platform.iOS;
 using Xamarin.Forms;
 using DrawIt;
 using DrawIt.iOS;
@@ -7,23 +8,28 @@ using System.ComponentModel;
 [assembly: ExportRenderer(typeof(ImageWithTouch), typeof(ImageWithTouchRenderer))]
 namespace DrawIt.iOS
 {
-    public class ImageWithTouchRenderer : ImageRenderer
+    public class ImageWithTouchRenderer : ViewRenderer<ImageWithTouch, DrawView> 
     {
-        protected override void OnModelSet(VisualElement model)
+        protected override void OnElementChanged(ElementChangedEventArgs<ImageWithTouch> e)
         {
-            base.OnModelSet(model);
+            base.OnElementChanged(e);
 
-            SetNativeControl(new DrawView(Control.Frame));
+            SetNativeControl(new DrawView(RectangleF.Empty));
         }
 
-        protected override void OnHandlePropertyChanged(object sender, PropertyChangedEventArgs e)
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            base.OnHandlePropertyChanged(sender, e);
+            base.OnElementPropertyChanged(sender, e);
 
             if (e.PropertyName == ImageWithTouch.CurrentLineColorProperty.PropertyName)
             {
-                ((DrawView)Control).CurrentLineColor = ((ImageWithTouch)Model).CurrentLineColor.ToUIColor();
+                UpdateControl();
             }
+        }
+
+        private void UpdateControl()
+        {
+            Control.CurrentLineColor = Element.CurrentLineColor.ToUIColor();
         }
     }
 }
