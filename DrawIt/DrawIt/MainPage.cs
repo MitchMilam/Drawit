@@ -89,20 +89,13 @@ namespace DrawIt
             return stack;
         }
 
-        // TODO: Refactor with an algorithm that examines the backgound color and determines correct forground color.
-        private Color GetTextColor(Color backgroundColor)
+        // Formula for computing Luminance out of R G B, which is something close to luminance = (red * 0.3) + (green * 0.6) + (blue * 0.1).
+        // Original Source: http://stackoverflow.com/questions/20978198/how-to-match-uilabels-textcolor-to-its-background
+        private static Color GetTextColor(Color backgroundColor)
         {
-            if (backgroundColor == Color.White ||
-                backgroundColor == Color.Yellow ||
-                backgroundColor == Color.Lime ||
-                backgroundColor == Color.Silver ||
-                backgroundColor == Color.Fuschia ||
-                backgroundColor == Color.Aqua)
-            {
-                return Color.Black;
-            }
+            var backgroundColorDelta = ((backgroundColor.R*0.3) + (backgroundColor.G*0.6) + (backgroundColor.B*0.1));
 
-            return Color.White;
+            return (backgroundColorDelta > 0.4f) ? Color.Black : Color.White;
         }
 
         private Frame BuildPalletFrame()
